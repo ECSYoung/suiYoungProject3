@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Link favicon -->
-    <link rel="icon" href="./Idea1Tarot/Assets/favicon.ico" type="image/gif">
+    <link rel="icon" href="./Assets/favicon.ico" type="image/gif">
+
+    <!-- Link in Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- Kit from Font Awesome -->
     <script src="https://kit.fontawesome.com/dfdc9c622d.js" crossorigin="anonymous"></script>
@@ -15,7 +18,7 @@
     <link href="" rel="stylesheet">
 
     <!-- link style sheet -->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./styles/sass/styles.css">
 
     <title>Tarot</title>
 </head>
@@ -34,25 +37,27 @@
             <button class="buttonStyle" type="reset">Reset</button>
             <button class="buttonStyle" type="submit">Download</button>
 
-            <!-- div for deck of cards -->
-            <div class="deck">
-    
             </div>
-    
-            <!-- div for placeholder 1 -->
-            <div class="placeholder1">
-    
+            <div class="placeholderParent">
+                <!-- div for placeholder 1 -->
+                <div class="placeholder1">
+        
+                </div>
+        
+                <!-- div for placeholder 2 -->
+                <div class="placeholder2">
+        
+                </div>
+        
+                <!-- div for placeholder 3 -->
+                <div class="placeholder3">
+        
+                </div>
+                
+                <!-- div for deck of cards -->
+                <div class="animated infinite flash slower deck">
             </div>
-    
-            <!-- div for placeholder 2 -->
-            <div class="placeholder2">
-    
-            </div>
-    
-            <!-- div for placeholder 3 -->
-            <div class="placeholder3">
-    
-            </div>
+
     
             <!-- div for readout -->
             <div class="textReading">
@@ -64,6 +69,15 @@
 
 
     </main>
+
+    <footer class = "wrapper">
+        <ul class="footerSocial">
+            <li><a href="https://github.com/ECSYoung" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitter.com/ECSYoungCodes" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/elizabethcsyoung/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:sui@xyoung.ca" target="_blank"><i class="fas fa-at"></i></a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
