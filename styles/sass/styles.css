@@ -520,8 +520,8 @@ canvas {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 35vh 1fr;
-      grid-template-rows: 35vh 1fr;
+  -ms-grid-rows: 42vh 1fr;
+      grid-template-rows: 42vh 1fr;
   width: 90%;
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -576,8 +576,8 @@ canvas {
 
 .deck {
   position: relative;
-  right: 2vw;
-  top: 18vh;
+  right: -2vw;
+  top: 11vh;
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
   width: 11vw;
@@ -607,7 +607,7 @@ canvas {
 .textReading {
   width: 100%;
   background: #f6f6f680;
-  height: 55vh;
+  height: 58vh;
   border-radius: 50px;
   -ms-grid-row: 2;
   grid-area: 2 / span 4;
