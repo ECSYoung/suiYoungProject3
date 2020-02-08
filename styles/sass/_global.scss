@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    // overflow: hidden;
+    overflow: hidden;
     background: $blackColor;
 }
 
@@ -33,28 +33,33 @@ h1, h2, h3, h4, p, a, li, ul {
 }
 
 h1, h2, h3, h4, h5, a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
+    color:white;
 }
 
 h1 {
-    @include fluid-type (4rem, 6rem, 360px, 1950px);
+    @include fluid-type (5rem, 8rem, 360px, 1950px);
     margin: 0;
     line-height: 4.5rem;
+    
 }
 
 h2 {
-    @include fluid-type (4rem, 5rem, 360px, 1950px);
+    @include fluid-type (4rem, 6.5rem, 360px, 1950px);
     margin: 0;
     line-height: 4.5rem;
+    display: inline;
+
 }
 
 h3 {
-    @include fluid-type (2rem, 6rem, 360px, 1950px);
+    @include fluid-type (4rem, 6.5rem, 360px, 1950px);
     margin-bottom: 3rem;
     margin-top: 3rem;
+    display: inline;
 }
 
 h4 {
@@ -84,6 +89,11 @@ i {
     margin:0 10px;
 }
 
+i:hover {
+    text-shadow: 5px 5px 15px rgb(142, 183, 245), -5px -5px 15px rgb(142, 183, 245);
+
+}
+
 img {
     width: 100%;
     display: block;
@@ -98,7 +108,7 @@ img {
 
 button {
     font-family: 'Oswald', sans-serif;
-    @include box (20rem, 5rem);
+    @include box (15%, 10vh);
     background: rgb(142, 183, 245);
     font-size: 2rem;
     font-weight: bold;
@@ -107,7 +117,7 @@ button {
     border-radius: 25px;
 }
 
-button:hover, button:focus {
+button:hover {
     box-shadow: inset 5px 5px 17px 0px rgba(0,0,0,0.92);
 }
 

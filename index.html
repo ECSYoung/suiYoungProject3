@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/dfdc9c622d.js" crossorigin="anonymous"></script>
 
     <!-- Google Font Script -->
-    <link href="" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Righteous&display=swap" rel="stylesheet">
 
     <!-- link style sheet -->
     <link rel="stylesheet" type="text/css" href="./styles/sass/styles.css">
@@ -23,49 +23,61 @@
     <title>Juno • Tarot</title>
 </head>
 <body>
-    <header>
-        <h1>JunoTarot</h1>
-        <div class="logo">
-            <!-- insert logo -->
-        </div>
-    </header>
-
+    <!-- no header, just a landing page -->
+    
     <main>
         <!-- particles.js container -->
         <div id="particles-js"></div>
-
+        
         <div class = "wrapper mainBody">
+            
+            <h1>JunoTarot</h1>
+
+            <div class="logo">
+                <!-- insert logo -->
+            </div>
     
             <!-- buttons -->
             <button class="buttonStyle" type="reset">Reset</button>
             <button class="buttonStyle" type="submit">Download</button>
 
-            </div>
-            <div class="placeholderParent">
-                <!-- div for placeholder 1 -->
-                <div class="placeholder1">
-        
+            <!-- reading space -->
+            <div class="blackDiv">
+                <div class="instruction">
+                    <h2 class="instrHeading">
+                        
+                    </h2>
                 </div>
-        
-                <!-- div for placeholder 2 -->
-                <div class="placeholder2">
-        
+                <div class="placeholderParent">
+                    <!-- div for placeholder 1 -->
+                    <div class="placeholder1">
+                        <div class="placeholderWhite"></div>
+                    </div>
+            
+                    <!-- div for placeholder 2 -->
+                    <div class="placeholder2">
+                        <div class="placeholderWhite"></div>
+                    </div>
+            
+                    <!-- div for placeholder 3 -->
+                    <div class="placeholder3">
+                        <div class="placeholderWhite"></div>
+                    </div>
+                    
+                    <!-- div for deck of cards -->
+                    <div class="animated infinite flash slower deck">
+                        <div class="placeholderWhite"></div>
+                    </div>
                 </div>
-        
-                <!-- div for placeholder 3 -->
-                <div class="placeholder3">
-        
-                </div>
-                
-                <!-- div for deck of cards -->
-                <div class="animated infinite flash slower deck">
             </div>
 
     
             <!-- div for readout -->
             <div class="textReading">
-                <h2 class="instrHeading"></h2>
-                <h2 class="readingHeading">Here's Your Reading </h2>
+                <div class="headerH2">
+                    <!-- display:none the ones interchangably according to how many cards are appended -->
+                    <h2 class="readingHeading">Here's Your Reading </h2>
+                </div>
             </div>
     
     

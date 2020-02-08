@@ -1,51 +1,78 @@
-// header
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: $blackColor;
+
+
+// position placeholders
+.placeholderParent {
+
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 11vw);
+    grid-template-rows: 18vw;
+    grid-gap: 15px;
+    width: 55%;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 // style the placeholders and the deck
 .placeholder1,
 .placeholder2,
 .placeholder3 {
-    width: 175px;
-    height: 270px;
+    width: 100%; //175px;
+    height: 100%; //270px;
     border: 2px dashed white;
-    border-radius: 50px;
-    margin: 3rem;
-    position: relative;
+    border-radius: 2vw;
+    margin: 3rem auto;
+    // position: relative;
     // top: -20vh; // shift up animation note.
 }
 
-// position placeholders
-.placeholderParent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // height: 80vh;
+.blackDiv {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: rgba(0, 0, 0, 0.788);
+    padding: 0 5rem;
+    margin-top: 5rem;
+    border-radius: 5vw;
 }
 
+
 .deck {
-    position: absolute;
-    right: 35rem;
-    width: 175px;
-    height: 270px;
+    position: relative;
+    right: 2vw;
+    top: 18vh;
+    transform: rotate(25deg);
+    width: 11vw; //175px;
+    height: 18vw; //270px;
     border: 2px dashed rgb(255, 184, 29);
-    border-radius: 50px;
+    border-radius: 2vw;
     margin: 3rem;
 }
 
-.deck:focus {
-    top: -20vh;
+.deck:hover {
+    box-shadow: 5px 5px 15px white, -5px -5px 15px white;
+}
+
+.placeholderWhite {
+    width: 90%;
+    height: 90%;
+    background: rgb(142, 183, 245);
+
+    border-radius: 1.5vw;
+    margin: 8% auto;
+}
+
+.headerH2 {
+    margin: 2%;
 }
 
 .textReading {
-    width: 50vw;
-    border: 2px dashed rgb(142, 183, 245);
+    width: 54vw;
+    background: #f6f6f680;
     height: 55vh;
     border-radius: 50px;
     position: absolute;
-    top: 50vh;
+    top: 55vh;
+    left: 23%;
+
 }
