@@ -294,7 +294,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc(4rem + 2.5 * ((100vw - 360px) / 1590));
+  font-size: calc(3rem + 2 * ((100vw - 360px) / 1590));
   margin: 0;
   line-height: 4.5rem;
   display: inline;
@@ -302,13 +302,13 @@ h2 {
 
 @media screen and (max-width: 360px) {
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1950px) {
   h2 {
-    font-size: 6.5rem;
+    font-size: 5rem;
   }
 }
 
@@ -374,6 +374,7 @@ li,
 ul {
   text-decoration: none;
   list-style-type: none;
+  line-height: 46px;
 }
 
 i {
@@ -406,7 +407,7 @@ button {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0 5px;
+  margin: 5px 5px;
   border-radius: 25px;
 }
 
@@ -529,7 +530,7 @@ canvas {
   height: 1000px;
   background: rgba(0, 0, 0, 0.788);
   padding: 0 5rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   border-radius: 5vw;
 }
 
@@ -569,8 +570,13 @@ canvas {
   height: 55vh;
   border-radius: 50px;
   position: absolute;
-  top: 55vh;
+  top: 60vh;
   left: 23%;
+}
+
+.instruction {
+  position: absolute;
+  right: 20px;
 }
 
 .footerSocial {
@@ -581,10 +587,6 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

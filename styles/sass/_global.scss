@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-    @include fluid-type (4rem, 6.5rem, 360px, 1950px);
+    @include fluid-type (3rem, 5rem, 360px, 1950px);
     margin: 0;
     line-height: 4.5rem;
     display: inline;
@@ -81,6 +81,7 @@ li,
 ul {
     text-decoration: none;
     list-style-type: none;
+    line-height: 46px;
 }
 
 i {
@@ -113,7 +114,7 @@ button {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 5px;
+    margin: 5px 5px;
     border-radius: 25px;
 }
 
