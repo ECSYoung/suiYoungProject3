@@ -1,0 +1,20 @@
+/* ---- reset ---- */
+
+
+canvas {
+    display: block;
+    height: 100vh;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1717177a;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}

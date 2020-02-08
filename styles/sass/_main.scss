@@ -1,3 +1,11 @@
+// header
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $blackColor;
+}
+
 // style the placeholders and the deck
 .placeholder1,
 .placeholder2,
@@ -16,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    // height: 80vh;
 }
 
 .deck {

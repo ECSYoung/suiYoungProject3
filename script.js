@@ -7,3 +7,4 @@ document.addEventListener("keydown", function (e) {
     audio.play();
     audio.currentTime = 0;
 })
+
