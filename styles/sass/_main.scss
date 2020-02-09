@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fit, 1fr);
-    width: 95%;
+    width: 100%;
     height: 150vh;
     margin: 0 auto;
     justify-content: center;
@@ -60,7 +60,7 @@
     margin: 1%;
 }
 
-.deck:hover {
+.deck5>img:hover ~ .deck {
     box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
 

@@ -513,6 +513,75 @@ canvas {
   z-index: -1;
 }
 
+.cardDeck {
+  position: relative;
+  right: 5.5vw;
+  min-width: 6rem;
+  min-height: 10rem;
+  top: 5vw;
+  width: 40vw;
+  margin: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: 1 / 4;
+}
+
+.deck2 {
+  position: relative;
+  right: 0vw;
+  top: 1.5vw;
+  width: 100%;
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deck3 {
+  position: relative;
+  right: 0.35vw;
+  top: -10vw;
+  width: 100%;
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deck4 {
+  position: absolute;
+  right: 0.45vw;
+  top: 0.75vw;
+  width: 100%;
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deck5 {
+  position: absolute;
+  right: 0.75vw;
+  top: 0vw;
+  width: 100%;
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .blackDiv {
   position: relative;
   width: 100%;
@@ -537,7 +606,7 @@ canvas {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   -ms-grid-rows: (1fr)[auto-fit];
       grid-template-rows: repeat(auto-fit, 1fr);
-  width: 95%;
+  width: 100%;
   height: 150vh;
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -580,7 +649,7 @@ canvas {
   margin: 1%;
 }
 
-.deck:hover {
+.deck5 > img:hover ~ .deck {
   -webkit-box-shadow: 5px 5px 15px white, -5px -5px 15px white;
           box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }

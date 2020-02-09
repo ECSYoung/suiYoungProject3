@@ -1,0 +1,52 @@
+.cardDeck {
+    position: relative;
+    right: 5.5vw;
+    min-width: 6rem;
+    min-height: 10rem;
+    top: 5vw;
+    width: 40vw; //175px;
+    margin: auto;
+    grid-area: 1 / 4;
+}
+
+.deck2 {
+    position: relative;
+    right: 0vw;
+    top: 1.5vw;
+    width: 100%; //175px;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+
+}
+
+.deck3 {
+    position: relative;
+    right: 0.35vw;
+    top: -10vw;
+    width: 100%; //175px;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+
+}
+
+.deck4 {
+    position: absolute;
+    right: 0.45vw;
+    top: 0.75vw;
+    width: 100%; //175px;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.deck5 {
+    position: absolute;
+    right: 0.75vw;
+    top: 0vw;
+    width: 100%; //175px;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+}
