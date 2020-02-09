@@ -276,63 +276,61 @@ h1, h2, h3, h4, h5, a {
 }
 
 h1 {
-  font-size: calc(5rem + 3 * ((100vw - 360px) / 1590));
+  font-size: calc(4rem + 2 * ((100vw - 360px) / 920));
   margin: 0;
   line-height: 4.5rem;
 }
 
 @media screen and (max-width: 360px) {
   h1 {
-    font-size: 5rem;
-  }
-}
-
-@media screen and (min-width: 1950px) {
-  h1 {
-    font-size: 8rem;
-  }
-}
-
-h2 {
-  font-size: calc(3rem + 2 * ((100vw - 360px) / 1590));
-  margin: 0;
-  line-height: 4.5rem;
-  display: inline;
-}
-
-@media screen and (max-width: 360px) {
-  h2 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 1950px) {
-  h2 {
-    font-size: 5rem;
-  }
-}
-
-h3 {
-  font-size: calc(4rem + 2.5 * ((100vw - 360px) / 1590));
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-  display: inline;
-}
-
-@media screen and (max-width: 360px) {
-  h3 {
     font-size: 4rem;
   }
 }
 
-@media screen and (min-width: 1950px) {
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+h2 {
+  font-size: calc(2.5rem + 1.5 * ((100vw - 360px) / 920));
+  margin: 0;
+  line-height: 4.5rem;
+  display: inline;
+}
+
+@media screen and (max-width: 360px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: calc(3rem + 2.5 * ((100vw - 360px) / 920));
+  display: inline;
+}
+
+@media screen and (max-width: 360px) {
   h3 {
-    font-size: 6.5rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h3 {
+    font-size: 5.5rem;
   }
 }
 
 h4 {
-  font-size: calc(3rem + 4 * ((100vw - 360px) / 1590));
+  font-size: calc(3rem + 4 * ((100vw - 360px) / 920));
   margin-bottom: 1.5rem;
   display: block;
   width: 100%;
@@ -345,7 +343,7 @@ h4 {
   }
 }
 
-@media screen and (min-width: 1950px) {
+@media screen and (min-width: 1280px) {
   h4 {
     font-size: 7rem;
   }
@@ -353,18 +351,18 @@ h4 {
 
 p {
   font-family: 'Cabin', sans-serif;
-  font-size: calc(1.8rem + 3.2 * ((100vw - 360px) / 1590));
+  font-size: calc(2rem + 3 * ((100vw - 360px) / 920));
   margin: 0;
   line-height: 4rem;
 }
 
 @media screen and (max-width: 360px) {
   p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
-@media screen and (min-width: 1950px) {
+@media screen and (min-width: 1280px) {
   p {
     font-size: 5rem;
   }
@@ -379,12 +377,28 @@ ul {
 
 i {
   color: #F6F6F6;
-  font-size: 10rem;
+  font-size: calc(2.5rem + 2.5 * ((100vw - 360px) / 920));
   margin: 0 10px;
+}
+
+@media screen and (max-width: 360px) {
+  i {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  i {
+    font-size: 5rem;
+  }
 }
 
 i:hover {
   text-shadow: 5px 5px 15px #8eb7f5, -5px -5px 15px #8eb7f5;
+}
+
+a {
+  padding: 30px;
 }
 
 img {
@@ -401,19 +415,31 @@ img {
 
 button {
   font-family: 'Oswald', sans-serif;
-  width: 15%;
-  height: 10vh;
+  width: 10vw;
+  height: 5vh;
   background: #8eb7f5;
-  font-size: 2rem;
+  font-size: calc(2rem + 1 * ((100vw - 360px) / 920));
   font-weight: bold;
   text-transform: uppercase;
-  margin: 5px 5px;
+  margin: 10px 5px 5px;
   border-radius: 25px;
 }
 
+@media screen and (max-width: 360px) {
+  button {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  button {
+    font-size: 3rem;
+  }
+}
+
 button:hover {
-  -webkit-box-shadow: inset 5px 5px 17px 0px rgba(0, 0, 0, 0.92);
-          box-shadow: inset 5px 5px 17px 0px rgba(0, 0, 0, 0.92);
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
+          box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
 }
 
 button:active {
@@ -536,17 +562,18 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
+  width: 85%;
   height: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  margin: 1% 0 auto;
 }
 
 .placeholder1,
 .placeholder2,
-.placeholder3, .deck {
+.placeholder3,
+.deck {
   width: 100%;
   height: 100%;
   border: 2px dashed white;
@@ -556,10 +583,8 @@ canvas {
 
 .deck {
   position: relative;
-  right: -2vw;
+  right: -5vw;
   top: 11vh;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
   width: 100%;
   height: 100%;
   border: 2px dashed #ffb81d;
@@ -572,6 +597,11 @@ canvas {
           box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
 
+.deck:active {
+  -webkit-box-shadow: inset 5px 5px 15px black, inset -5px -5px 15px black;
+          box-shadow: inset 5px 5px 15px black, inset -5px -5px 15px black;
+}
+
 .placeholderWhite {
   width: 90%;
   height: 90%;
@@ -581,7 +611,7 @@ canvas {
 }
 
 .headerH2 {
-  margin: 2%;
+  margin: 1.5%;
 }
 
 .textReading {
@@ -590,7 +620,7 @@ canvas {
   height: 58vh;
   border-radius: 50px;
   -ms-grid-row: 2;
-  grid-area: 2 / span 4;
+  grid-area: 2;
 }
 
 .instruction {
@@ -609,13 +639,20 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  bottom: -15px;
+  position: relative;
+  left: -48%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   width: 100%;
 }
 
+i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .footerSocial:hover {
-  bottom: 1rem;
+  right: -47%;
   -webkit-transition: bottom 1s ease-in-out;
   transition: bottom 1s ease-in-out;
 }
