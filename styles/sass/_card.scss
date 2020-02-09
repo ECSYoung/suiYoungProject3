@@ -17,6 +17,7 @@
     margin: 1%;
     display: flex;
     align-items: center;
+    transform: rotate(15deg);
 
 }
 
@@ -28,7 +29,7 @@
     margin: 1%;
     display: flex;
     align-items: center;
-
+    transform: rotate(-5deg);
 }
 
 .deck4 {
@@ -39,12 +40,24 @@
     margin: 1%;
     display: flex;
     align-items: center;
+    transform: rotate(10deg)
 }
 
 .deck5 {
     position: absolute;
-    right: 0.75vw;
+    right: 0.55vw;
     top: 0vw;
+    width: 100%; //175px;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    transform: rotate(-10deg);
+}
+
+.deck6 {
+    position: absolute;
+    right: 0.25vw;
+    top: 1vw;
     width: 100%; //175px;
     margin: 1%;
     display: flex;
