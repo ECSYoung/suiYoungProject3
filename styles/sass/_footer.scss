@@ -5,16 +5,17 @@
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: black;
     position: relative;
-    left: -48%;
-    transform: rotate(90deg);
-    width: 100%;
+    bottom: 4rem;
 }
 
-i {
-    transform: rotate(-90deg);
-}
+
+
+
+
 
 // on responsive, remove hover, and restore bottom to 0.
 .footerSocial:hover {

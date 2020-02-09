@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-    @include fluid-type (2.5rem, 4rem, 360px, 1280px);
+    @include fluid-type (2rem, 2.5rem, 360px, 1280px);
     margin: 0;
     line-height: 4.5rem;
     display: inline;
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-    @include fluid-type (3rem, 5.5rem, 360px, 1280px);
+    @include fluid-type (2.5rem, 5rem, 360px, 1280px);
     display: inline;
 }
 
@@ -84,8 +84,9 @@ ul {
 
 i {
     color: $whiteShadeColor;
-    @include fluid-type (2.5rem, 5rem, 360px, 1280px);
-    margin:0 10px;
+    // @include fluid-type (2.5rem, 4rem, 360px, 1280px);
+    // margin:0 10px;
+    font-size: 3rem;
 }
 
 i:hover {
@@ -111,9 +112,11 @@ img {
 
 button {
     font-family: 'Oswald', sans-serif;
-    @include box (10vw, 5vh); //width x height
+    @include box (10vh, 5vh); //width x height
+    min-width: 5vh;
+    min-height: 5vh;
     background: rgb(142, 183, 245);
-    @include fluid-type (2rem, 3rem, 360px, 1280px);
+    @include fluid-type (1.5rem, 2rem, 360px, 1280px);
     font-weight: bold;
     text-transform: uppercase;
     margin: 10px 5px 5px;

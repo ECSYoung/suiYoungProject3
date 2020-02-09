@@ -17,21 +17,22 @@
 //set up 2 row 1 column grid
 .mainGrid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 42vh 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
     width: 95%;
+    height: 150vh;
     margin: 0 auto;
     justify-content: center;
+    border: 2px solid blue;
 }
 
 // position placeholders
 .placeholderParent {
-    grid-area: 1 / 1;
+    grid-area: 1 / span 4;
     display: flex;
-    width: 85%;
-    height: 90%;
-    justify-content: center;
-    margin: 1% 0 auto;
+    width: 45vw;
+    height: 16vw;
+    margin: auto;
 }
 
 // style the placeholders and the deck
@@ -40,16 +41,19 @@
 .placeholder3,
 .deck {
     width: 100%; //175px;
+    min-width: 6rem;
     height: 100%; //270px;
+    min-height: 10rem;
     border: 2px dashed white;
     border-radius: 2vw;
     margin: 1%;
+    
 }
 
 .deck {
     position: relative;
-    right: -5vw;
-    top: 11vh;
+    right: -3vw;
+    top: 4vw;
     width: 100%; //175px;
     height: 100%; //270px;
     border: 2px dashed rgb(255, 184, 29);
@@ -75,18 +79,20 @@
 }
 
 .headerH2 {
-    margin: 1.5%;
+    margin: 1.5% 3%;
 }
 
 .textReading {
     width: 100%;
     background: #f6f6f680;
-    height: 58vh;
+    height: 125vh;
     border-radius: 50px;
-    grid-area: 2;
+    margin-top: 2rem;
+    grid-area: 2 / span 4;
 }
 
 .instruction {
     position: absolute;
     right: 20px;
+    top: -9rem;
 }
