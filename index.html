@@ -71,29 +71,30 @@
                         </div>
                         
                         <!-- div for deck of cards -->
-                        <div class="animated infinite wobble slower deck">
+                        <div class="deck">
                             <div class="placeholderWhite"></div>
                         </div>
 
                         <!-- create the deck of cards -->
-                        <div class="cardDeck animated infinite wobble slower">
+                        <div class="cardDeck">
                             <div class="deck2">
                                 <img src= "./Assets/Cards/wingedSpirit/backofcard.jpg" alt="image of the glyph illustration on the back of the tarot deck.">
                             </div>
-                            <div class="deck3">
-                                <img src="./Assets/Cards/wingedSpirit/backofcard.jpg"
-                                    alt="image of the glyph illustration on the back of the tarot deck.">
-                            </div>
+                            <!-- deck3 class creates odd anomaly, deleted that div. -->
                             <div class="deck4">
                                 <img src="./Assets/Cards/wingedSpirit/backofcard.jpg"
                                     alt="image of the glyph illustration on the back of the tarot deck.">
                             </div>
                             <div class="deck5">
-                                <img class="deck5Img" src="./Assets/Cards/wingedSpirit/backofcard.jpg"
+                                <img src="./Assets/Cards/wingedSpirit/backofcard.jpg"
                                     alt="image of the glyph illustration on the back of the tarot deck.">
                             </div>
                             <div class="deck6">
-                                <img class="deck5Img" src="./Assets/Cards/wingedSpirit/backofcard.jpg"
+                                <img src="./Assets/Cards/wingedSpirit/backofcard.jpg"
+                                    alt="image of the glyph illustration on the back of the tarot deck.">
+                            </div>
+                            <div class="deck7">
+                                <img class="deck7Img" src="./Assets/Cards/wingedSpirit/backofcard.jpg"
                                     alt="image of the glyph illustration on the back of the tarot deck.">
                             </div>
                         </div>
@@ -102,14 +103,15 @@
                     <!-- div for readout -->
                     <div class="textReading">
                         <div class="headerH2">
-                            <!-- display:none the ones interchangably according to how many cards are appended -->
                             <h2 class="readingHeading">Here's Your Reading </h2>
-                            <div class="readSpace">
-                                <p class="read"></p>
-                                <p class="read2"></p>
-                                <p class="read3"></p>
-                            </div>
                         </div>
+
+                        <div class="readSpace">
+                            <p class="read"> This is where your reading will appear.</p>
+                            <p class="read2"></p>
+                            <p class="read3"></p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -129,6 +131,7 @@
 
     </footer>
 
+    <script src="./script.js"></script>
 
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 

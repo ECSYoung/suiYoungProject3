@@ -32,6 +32,7 @@
     width: 45vw;
     height: 16vw;
     margin: auto;
+    justify-content: center;
 }
 
 // style the placeholders and the deck
@@ -44,23 +45,24 @@
     height: 100%; //270px;
     min-height: 10rem;
     border: 2px dashed white;
-    border-radius: 2vw;
+    border-radius: 1vw;
     margin: 1%;
     
 }
 
 .deck {
     position: relative;
-    right: -3vw;
+    right: -6vw;
     top: 4vw;
     width: 100%; //175px;
     height: 100%; //270px;
     border: 2px dashed rgb(255, 184, 29);
-    border-radius: 2vw;
+    border-radius: 1vw;
     margin: 1%;
+    transform: rotate(25deg);
 }
 
-.deck5Img:hover ~ .deck {
+.deck7mg:hover + .deck {
     box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
 
@@ -79,6 +81,7 @@
 
 .headerH2 {
     margin: 1.5% 3%;
+    width: 100%;
 }
 
 .textReading {
@@ -88,6 +91,20 @@
     border-radius: 50px;
     margin-top: 2rem;
     grid-area: 2 / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.readSpace {
+    background: white;
+    display: block;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 25px;
 }
 
 .instruction {

@@ -351,20 +351,20 @@ h4 {
 
 p {
   font-family: 'Cabin', sans-serif;
-  font-size: calc(2rem + 3 * ((100vw - 360px) / 920));
+  font-size: calc(1.5rem + 1 * ((100vw - 360px) / 920));
   margin: 0;
   line-height: 4rem;
 }
 
 @media screen and (max-width: 360px) {
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   p {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -515,12 +515,15 @@ canvas {
 
 .cardDeck {
   position: relative;
-  right: 5.5vw;
+  right: 3rem;
+  top: 3rem;
   min-width: 6rem;
   min-height: 10rem;
-  top: 5vw;
-  width: 40vw;
+  width: 50vw;
+  height: 12vw;
   margin: auto;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: 1 / 4;
@@ -528,7 +531,7 @@ canvas {
 
 .deck2 {
   position: relative;
-  right: 0vw;
+  right: 0.25vw;
   top: 1.5vw;
   width: 100%;
   margin: 1%;
@@ -538,30 +541,12 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
-.deck3 {
-  position: relative;
-  right: 0.35vw;
-  top: -10vw;
-  width: 100%;
-  margin: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
 }
 
 .deck4 {
   position: absolute;
-  right: 0.45vw;
-  top: 0.75vw;
+  right: 0.50vw;
+  top: 1.75vw;
   width: 100%;
   margin: 1%;
   display: -webkit-box;
@@ -570,14 +555,12 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
 }
 
 .deck5 {
   position: absolute;
-  right: 0.55vw;
-  top: 0vw;
+  right: 0.75vw;
+  top: 2vw;
   width: 100%;
   margin: 1%;
   display: -webkit-box;
@@ -586,14 +569,12 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
 }
 
 .deck6 {
   position: absolute;
-  right: 0.25vw;
-  top: 1vw;
+  right: 1vw;
+  top: 2.25vw;
   width: 100%;
   margin: 1%;
   display: -webkit-box;
@@ -602,6 +583,22 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.deck7 {
+  position: absolute;
+  right: 1vw;
+  top: -0.5vw;
+  width: 100%;
+  margin: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
 }
 
 .blackDiv {
@@ -645,6 +642,9 @@ canvas {
   width: 45vw;
   height: 16vw;
   margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .placeholder1,
@@ -656,22 +656,24 @@ canvas {
   height: 100%;
   min-height: 10rem;
   border: 2px dashed white;
-  border-radius: 2vw;
+  border-radius: 1vw;
   margin: 1%;
 }
 
 .deck {
   position: relative;
-  right: -3vw;
+  right: -6vw;
   top: 4vw;
   width: 100%;
   height: 100%;
   border: 2px dashed #ffb81d;
-  border-radius: 2vw;
+  border-radius: 1vw;
   margin: 1%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
 }
 
-.deck5Img:hover ~ .deck {
+.deck7mg:hover + .deck {
   -webkit-box-shadow: 5px 5px 15px white, -5px -5px 15px white;
           box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
@@ -691,6 +693,7 @@ canvas {
 
 .headerH2 {
   margin: 1.5% 3%;
+  width: 100%;
 }
 
 .textReading {
@@ -701,6 +704,26 @@ canvas {
   margin-top: 2rem;
   -ms-grid-row: 2;
   grid-area: 2 / span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.readSpace {
+  background: white;
+  display: block;
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1%;
+  border-radius: 25px;
 }
 
 .instruction {
