@@ -83,7 +83,7 @@ $('.deck7').on('click', function () {
     console.log(value2);
     
     //for fun, append results to p:
-    $('textarea').append("You've pulled " + value + " of " + value2 + "! ");
+    $('.readout').append("<li>" + "You've pulled " + value + " of " + value2 + "! " + "</li>");
 });
 
 
