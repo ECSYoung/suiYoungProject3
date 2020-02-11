@@ -331,22 +331,24 @@ h3 {
 }
 
 h4 {
-  font-size: calc(3rem + 4 * ((100vw - 360px) / 920));
-  margin-bottom: 1.5rem;
+  font-size: calc(1.8rem + 1.2 * ((100vw - 360px) / 920));
+  margin: 0;
+  padding: 0;
   display: block;
   width: 100%;
   line-height: 4rem;
+  color: black;
 }
 
 @media screen and (max-width: 360px) {
   h4 {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
   h4 {
-    font-size: 7rem;
+    font-size: 3rem;
   }
 }
 
