@@ -147,15 +147,17 @@ $('.deck7').on('click', function () {
         // return value in console log/append to read pannel.
         if (num < 14) {//for non-major arcana
             console.log(num);
-            let suiteIndex = getRandom(suites.length); //return Int value for suit index, use value to search suites array for value and console.log it.
+            let suiteIndex = getRandom(suites.length); // gives # for [#]
+            //return Int value for suit index, use value to search suites array for value and console.log it.
             console.log(suiteIndex);            
             let findSuite = suites[suiteIndex];
-            console.log(findSuite);
-            console.log(suites[findSuite]);  
+            // console.log(findSuite);
+            // console.log(suites);
+            // console.log(findSuite);  
             
                 //for fun, append results to p:
 
-            $('.readout').append("<li>" + "You've pulled " + num + " of " + suites[findSuite] + "! " + "</li>");
+            $('.readout').append("<li>" + "You've pulled " + num + " of " + findSuite + "! " + "</li>");
 
         } else if (num > 14) { //for major arcana
             console.log(num); 
