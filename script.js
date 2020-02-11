@@ -6,21 +6,21 @@
 // set up arrays:
 tarotCard = {
     majorArcana: [
-        {
+        {//array index: 0
             value: 'mj0',
             card: `<img src="./Assets/Cards/wingedSpirit/0.jpg" alt=""></img>`,
             title: `<h4 class="pBreak">The Fool</h4>`,
             generalMeaning: `header`,
             advice: `p text`
         },
-        {
+        {//array index: 1
             value: 'mj1',
             card: `<img src="" alt=""></img>`,
             title: `The Magician`,
             generalMeaning: `ptext`,
             advise: `<h4 class="pBreak:>In the Advice Position<h4>`
         },
-        {
+        {//array index: 2
             value: 'mj',
             card: `<img src="" alt=""></img>`,
             title: `Empress`,
@@ -29,21 +29,21 @@ tarotCard = {
         }
     ],
     wands: [
-        {
+        {//array index: 0
             value: "Ace",
             card: `<img src="" alt = "">`,
             title: `Ace`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 1
             value: "Page",
             card: `<img src="" alt = "">`,
             title: `Page`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 2
             value: "Queen",
             card: `<img src="" alt = "">`,
             title: `Queen`,
@@ -52,21 +52,21 @@ tarotCard = {
         }
     ],
     cups: [
-        {
+        {//array index: 0
             value: "Ace",
             card: `<img src="" alt = "">`,
             title: `Ace of cups`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 1
             value: "Page",
             card: `<img src="" alt = "">`,
             title: `Page of Cups`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 2
             value: "Queen",
             card: `<img src="" alt = "">`,
             title: `Queen of cups`,
@@ -75,21 +75,21 @@ tarotCard = {
         }
     ],
     swords: [
-        {
+        {//array index: 0
             value: "Ace",
             card: `<img src="" alt = "">`,
             title: `ace of swords`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 1
             value: "Page",
             card: `<img src="" alt = "">`,
             title: `Page of swords`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 2
             value: "Queen",
             card: `<img src="" alt = "">`,
             title: `Queen of Swords`,
@@ -98,21 +98,21 @@ tarotCard = {
         }
     ],
     pentacles: [
-        {
+        {//array index: 0
             value: "Ace",
             card: `<img src="" alt = "">`,
             title: `pentacles`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 1
             value: "Page",
             card: `<img src="" alt = "">`,
             title: `Page of Pentacles`,
             generalMeaning: `general meaning`,
             advise: `something`
         },
-        {
+        {//array index: 2
             value: "Queen",
             card: `<img src="" alt = "">`,
             title: `Queen of Pentacles`,
@@ -145,20 +145,22 @@ $('.deck7').on('click', function () {
         // use the returned suite value to find the array in 'tarotCard' object
         // random search within suite array for a card number, and 
         // return value in console log/append to read pannel.
-        if (num < 14) {
+        if (num < 14) {//for non-major arcana
             console.log(num);
             let suiteIndex = getRandom(suites.length); //return Int value for suit index, use value to search suites array for value and console.log it.
             console.log(suiteIndex);            
             let findSuite = suites[suiteIndex];
             console.log(findSuite);
-            console.log(tarotCard[findSuite][0].title);            
-            let value = tarotCard[findSuite].title;
+            console.log(suites[findSuite]);  
+            
                 //for fun, append results to p:
 
-            $('.readout').append("<li>" + "You've pulled " + num + " of " + tarotCard[findSuite].title + "! " + "</li>");
-        } else if (num > 14) {
-            console.log(num);
-            let majArcana = getRandom(tarotCard.majorArcana.length); //return Int value for majorArcana index
+            $('.readout').append("<li>" + "You've pulled " + num + " of " + suites[findSuite] + "! " + "</li>");
+
+        } else if (num > 14) { //for major arcana
+            console.log(num); 
+            let majArcana = getRandom(tarotCard.majorArcana.length); 
+            //return Int value for majorArcana index
             console.log(majArcana);
             console.log(tarotCard.majorArcana[majArcana].title);
                 //for fun, append results to p:
@@ -166,10 +168,8 @@ $('.deck7').on('click', function () {
             $('.readout').append("<li>" + "You've pulled " + tarotCard.majorArcana[majArcana].title + "! " + "</li>");
         }
     
-    //for fun, append results to p:
 });
 
 
-// bring it all together:
-// assign value and value2 to index, with if statements, that exclude suits when values 14 - 15 are returned. Give a variable name: cardSelected
+
 
