@@ -33,21 +33,21 @@ tarotCard = {
             value: "Ace",
             card: `<img src="" alt = "">`,
             title: `Ace`,
-            generalMeaning: `something`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Page",
             card: `<img src="" alt = "">`,
             title: `Page`,
-            generalMeaning: `something`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Queen",
             card: `<img src="" alt = "">`,
             title: `Queen`,
-            generalMeaning: `something`,
+            generalMeaning: `general meaning`,
             advise: `something`
         }
     ],
@@ -55,22 +55,22 @@ tarotCard = {
         {
             value: "Ace",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `Ace of cups`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Page",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `Page of Cups`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Queen",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `Queen of cups`,
+            generalMeaning: `general meaning`,
             advise: `something`
         }
     ],
@@ -78,22 +78,22 @@ tarotCard = {
         {
             value: "Ace",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `ace of swords`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Page",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `Page of swords`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Queen",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `Queen of Swords`,
+            generalMeaning: `general meaning`,
             advise: `something`
         }
     ],
@@ -101,22 +101,22 @@ tarotCard = {
         {
             value: "Ace",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `pentacles`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Page",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `Page of Pentacles`,
+            generalMeaning: `general meaning`,
             advise: `something`
         },
         {
             value: "Queen",
             card: `<img src="" alt = "">`,
-            title: `something`,
-            generalMeaning: `something`,
+            title: `Queen of Pentacles`,
+            generalMeaning: `general meaning`,
             advise: `something`
         }
     ],
@@ -151,20 +151,22 @@ $('.deck7').on('click', function () {
             console.log(suiteIndex);            
             let findSuite = suites[suiteIndex];
             console.log(findSuite);
-            console.log(tarotCard[findSuite].title);
+            console.log(tarotCard[findSuite][0].title);            
             let value = tarotCard[findSuite].title;
+                //for fun, append results to p:
+
             $('.readout').append("<li>" + "You've pulled " + num + " of " + tarotCard[findSuite].title + "! " + "</li>");
         } else if (num > 14) {
             console.log(num);
             let majArcana = getRandom(tarotCard.majorArcana.length); //return Int value for majorArcana index
             console.log(majArcana);
             console.log(tarotCard.majorArcana[majArcana].title);
-            let value = tarotCard.majorArcana[majArcana].title;
-            $('.readout').append("<li>" + "You've pulled " + value + "! " + "</li>");
+                //for fun, append results to p:
+
+            $('.readout').append("<li>" + "You've pulled " + tarotCard.majorArcana[majArcana].title + "! " + "</li>");
         }
     
     //for fun, append results to p:
-    $('.readout').append("<li>" + "You've pulled " + num + " of " + value + "! " + "</li>");
 });
 
 
