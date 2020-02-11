@@ -3,6 +3,7 @@
 //     console.log('ready');
 // });
 
+// 🌎 GLOBAL SCOPE •••
 //button to empty inputs:
 $('.buttonStyle').on('click', function() {
     $('placeholder1').empty();
@@ -16,7 +17,7 @@ tarotCard = {
     majorArcana: [
         {//array index: 0
             value: 'mj0',
-            card: `<img src="./Assets/Cards/wingedSpirit/0.jpg" alt=""></img>`,
+            card: `./Assets/Cards/wingedSpirit/0.jpg" alt=""`,
             title: `<h4 class="pBreak">The Fool</h4>`,
             generalMeaning: `header`,
             advice: `p text`
@@ -137,12 +138,24 @@ suites = [
     'pentacles' //3
 ]// end of card arrays
 
+//array for placeholder positions
+placeholder = {
+    placeholder1: `<img src="">`,
+    placeholder2: `<img src="">`,
+    placeholder3: `<img src="">`
+};
+
 let num = Math.round(Math.random() * 35) + 1;
 
 // function that ill provide a randomNumber
 function getRandom(arrayLength) {
     return Math.floor(Math.random() * arrayLength);
 }
+
+
+// 🌎 END GLOBAL SCOPE •••
+
+        let counter = 0;
 
 $('.deck7').on('click', function () {
     //for major arcana and card number.
@@ -163,9 +176,9 @@ $('.deck7').on('click', function () {
             // console.log(suites);
             // console.log(findSuite);  
             
-                //for fun, append results to p:
+            //append reading to read panel
+            $('.readout').append("<li>" + "You've pulled " + num + " of " + findSuite + "! " + "</li>");            
 
-            $('.readout').append("<li>" + "You've pulled " + num + " of " + findSuite + "! " + "</li>");
 
         } else if (num > 14) { //for major arcana
             console.log(num); 
@@ -177,6 +190,43 @@ $('.deck7').on('click', function () {
 
             $('.readout').append("<li>" + "You've pulled " + tarotCard.majorArcana[majArcana].title + "! " + "</li>");
         }
+
+        // append reading to appropriate placeholders
+        //click counter
+        
+        counter ++;
+        console.log('counter', counter)
+
+        if (counter === 1 && num < 14) {
+            console.log('clicked once');
+            counter++;
+            $('.placeholder1').append(`${tarotCard[findSuite].card}`);
+
+        } else if (counter === 1 && num > 14) {
+            console.log('clicked once');
+            counter++;
+            $('.placeholder1').append(`${tarotCard.majorArcana.card}`);
+
+        } else if (counter === 2 && num > 14) {
+            console.log('clicked a second time');
+            counter++;
+            $('.placeholder2').append(`${tarotCard.majorArcana[majArcana].card}`);
+
+        } else if (counter === 2 && num < 14) {
+            console.log('clicked a second time');
+            counter++;
+            $(".placeholder2").append(`${tarotCard[findSuite].card}`);
+
+        } else if (counter === 3 && num < 14) {
+            console.log('clicked a third time');
+            counter++;
+            $(".placeholder3").append(`${tarotCard[findSuite].card}`);
+
+        } else if (counter === 3 && num > 14) {
+            console.log('clicked a third time');
+            counter++;
+            $('.placeholder3').append(`${tarotCard.majorArcana[majArcana].card}`);
+        };
     
 });
 

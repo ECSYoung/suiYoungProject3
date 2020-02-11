@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-    @include fluid-type (2rem, 2.5rem, 360px, 1280px);
+    @include fluid-type (2rem, 3rem, 360px, 1280px);
     margin: 0;
     line-height: 4.5rem;
     display: inline;
