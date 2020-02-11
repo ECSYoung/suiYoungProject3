@@ -3,6 +3,14 @@
 //     console.log('ready');
 // });
 
+//button to empty inputs:
+$('.buttonStyle').on('click', function() {
+    $('placeholder1').empty();
+    $('placeholder2').empty();
+    $('placeholder3').empty();
+    $('.readout').empty();
+});
+
 // set up arrays:
 tarotCard = {
     majorArcana: [

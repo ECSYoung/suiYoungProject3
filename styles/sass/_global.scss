@@ -22,7 +22,7 @@ main {
 
 .wrapper {
     width: 100vw;
-    max-width: 1280px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, a {
 }
 
 h1 {
-    @include fluid-type (4rem, 6rem, 360px, 1280px);
+    @include fluid-type (3rem, 6rem, 360px, 1280px);
     margin: 0;
     line-height: 4.5rem;
     
@@ -56,8 +56,9 @@ h2 {
 }
 
 h3 {
-    @include fluid-type (2.5rem, 5rem, 360px, 1280px);
+    @include fluid-type (0.25rem, 1rem, 360px, 1280px);
     display: inline;
+    color: $blackColor;
 }
 
 h4 {
@@ -114,11 +115,12 @@ img {
 .buttonStyle {
     font-family: 'Oswald', sans-serif;
     @include box (10vh, 5vh); //width x height
-    min-width: 5vh;
-    min-height: 5vh;
+    min-width: 8rem;
+    min-height: 4rem;
     background: rgb(142, 183, 245);
-    @include fluid-type (1.5rem, 2rem, 360px, 1280px);
+    @include fluid-type (2rem, 3rem, 360px, 1280px);
     font-weight: bold;
+    color: $whiteShadeColor;
     text-transform: uppercase;
     margin: 10px 5px 5px;
     border-radius: 25px;

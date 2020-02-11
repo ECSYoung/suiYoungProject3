@@ -1,3 +1,44 @@
+//flex title and button
+.headerTextNButton {
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+
+// instruction toggle:
+label[for="toggle2"] {
+    position: absolute;
+    top: -1vh;
+    right: 2rem;
+    font-size: 5rem;
+    color: #fafafa;
+    margin: 1rem;
+    display: block;
+    z-index: 13;
+}
+
+input[name="toggle2"] {
+    display: none;
+}
+
+input[name="toggle2"]:checked+.instruction {
+    right: 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.instruction {
+    position: absolute;
+    right: -500px;
+    top: 5.75rem;
+    color: black;
+    background: #f6f6f6;
+    border-radius: 25px;
+    padding: 1%;
+    z-index: 1;
+}
+
+
 // main page grid:
 
 .blackDiv {
@@ -6,8 +47,8 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.788);
     padding: 0 5rem;
-    margin-top: 2rem;
-    border-radius: 5vw;
+    margin-top: 1rem;
+    border-radius: 10rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -19,6 +60,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 20px;
     width: 100%;
     height: 150vh;
     margin: 0 auto;
@@ -29,8 +71,8 @@
 .placeholderParent {
     grid-area: 1 / span 4;
     display: flex;
-    width: 45vw;
-    height: 16vw;
+    width: 50vw;
+    height: 15vw;
     margin: auto;
     justify-content: center;
 }
@@ -47,13 +89,13 @@
     border: 2px dashed white;
     border-radius: 1vw;
     margin: 1%;
-    
+
 }
 
 .deck {
     position: relative;
-    right: -6vw;
-    top: 4vw;
+    right: -16%;
+    top: 4%;
     width: 100%; //175px;
     height: 100%; //270px;
     border: 2px dashed rgb(255, 184, 29);
@@ -62,12 +104,12 @@
     transform: rotate(25deg);
 }
 
-.deck7mg:hover + .deck {
+.deck7mg:hover+.deck {
     box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
 
 .deck:active {
-    box-shadow:inset 5px 5px 15px rgb(0, 0, 0),inset -5px -5px 15px rgb(0, 0, 0);
+    box-shadow: inset 5px 5px 15px rgb(0, 0, 0), inset -5px -5px 15px rgb(0, 0, 0);
 }
 
 .placeholderWhite {
@@ -110,10 +152,4 @@
 textarea {
     font-size: 1.5rem;
     color: $blackColor;
-}
-
-.instruction {
-    position: absolute;
-    right: 20px;
-    top: -9rem;
 }
