@@ -139,12 +139,18 @@ tarotCard = {
             title: `<h4 class="pBreak">The Lovers</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">Although it has taken on a strictly romantic revision of meaning in some modern decks, traditionally The Lovers Tarot card reflected the challenges of choosing a partner. At a crossroads, one cannot take both paths. The images on this card in different decks have varied more than most, because we have had so many ways of looking at sex and relationships across cultures and centuries.</span>
+
+            <span class="pBreak">Classically, the energy of this card reminded us of the real challenges posed by romantic relationships, with the protagonist often shown in the act of making an either-or choice. To partake of a higher ideal often requires sacrificing the lesser option. The path of pleasure eventually leads to distraction from spiritual growth. The gratification of the personality eventually gives way to a call from spirit as the soul matures.</span>
+
+            <span class="pBreak">Modern decks tend to portray the feeling of romantic love with this card, showing Adam and Eve at the gates of Eden when everything was still perfect. This interpretation portrays humanity before the fall, and can be thought to imply a different sort of choice -- the choice of evolution over perfection, or the choice of personal growth through relationship -- instead of a fantasy where everything falls into place perfectly and is taken care of without effort.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Lovers card advises that you study your options and make the wisest choice. Carefully consider your long-term interests. There is no judgment on what you choose to keep from the array of possibilities before you. Just watch out for choices that will produce dissatisfaction and discontent.</span>
+
+            <span class="pBreak">Be willing to make some compromises, then stick with the commitments you finally make. Trust your intuition along with your rational intellect, and once you make your choice, carry it out with conviction.</span>
             
             </p>`
         },
@@ -153,11 +159,7 @@ tarotCard = {
             title: `<h4 class="pBreak">The Chariot</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak">Although it has taken on a strictly romantic revision of meaning in some modern decks, traditionally The Lovers Tarot card reflected the challenges of choosing a partner. At a crossroads, one cannot take both paths. The images on this card in different decks have varied more than most, because we have had so many ways of looking at sex and relationships across cultures and centuries.</span>
-
-            <span class="pBreak">Classically, the energy of this card reminded us of the real challenges posed by romantic relationships, with the protagonist often shown in the act of making an either-or choice. To partake of a higher ideal often requires sacrificing the lesser option. The path of pleasure eventually leads to distraction from spiritual growth. The gratification of the personality eventually gives way to a call from spirit as the soul matures.</span>
-
-            <span class="pBreak">Modern decks tend to portray the feeling of romantic love with this card, showing Adam and Eve at the gates of Eden when everything was still perfect. This interpretation portrays humanity before the fall, and can be thought to imply a different sort of choice -- the choice of evolution over perfection, or the choice of personal growth through relationship -- instead of a fantasy where everything falls into place perfectly and is taken care of without effort.</span>
+            <p><span class="pBreak"></span>
             
             </p>`,
             advice: `
