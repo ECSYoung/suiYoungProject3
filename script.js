@@ -22,14 +22,39 @@ tarotCard = {
         {//array index: 0
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/0.jpg" alt="The Fool Card">`,
             title: `<h4 class="pBreak">The Fool</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak">Pamela Coleman-Smith's artful rendition of The Fool in the Rider-Waite Tarot deck is often used to represent Tarot in general. Early classical versions of The Fool card, however, portray quite a different character -- a person driven by base needs and urges, who has fallen into a state of poverty and deprivation.</span>
+
+            <span class="pBreak">In some earlier instances, The Fool is made out to be a carnival entertainer or a huckster. In others, he is portrayed as decrepit and vulnerable -- as the cumulative result of his delusions and failures. Not until the 20th century do you see the popular Rider-Waite image of The Fool arise -- that of an innocent soul before its fall into matter, untainted by contact with society and all its ills.</span>
+
+            <span class="pBreak">Modern decks usually borrow from the Rider-Waite imagery. Most Fool cards copy the bucolic mountainside scene, the butterfly, and the potential misplaced step that will send The Fool tumbling into the unknown. Don't forget, though, that the earlier versions of this card represented already-fallen humanity, over-identified with the material plane of existence, and beginning a pilgrimage toward self-knowledge and, eventually, wisdom. The Fool reminds us to recognize the path of personal development within ourselves -- and the stage upon that path where we find ourselves -- in order to energize our movement toward deeper self-realization.</span></p>
+            `,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak">The Fool advises that you lighten up. Let yourself be spontaneous enough to stretch beyond the realm of logic. There is no advantage to be gained by thinking you possess the knowledge, power, or control to direct reality. Open and receive without question, instead of trying to manage what's happening right now. The Fool has no ambition to manipulate a specific outcome. Just be happy to be part of the whole.</span>
+
+            <span class="pBreak">Release any demands or expectations. Give your complete attention to events as they are occurring in the present moment.</span>
+            
+            </p>`
         },
         {//array index: 1
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/1.jpg" alt="The Magician">`,
             title: `<h4 class="pBreak">The Magician</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak">Traditionally, The Magician is one who can demonstrate hands-on magic -- as in healing, transformative rituals, alchemical transmutations, charging of talismans, and the like. A modern Magician is any person who completes the circuit between heaven and Earth; one who seeks to bring forth the divine gold within her or himself.</span>
+
+            <span class="pBreak">At the birth of Tarot, even a gifted healer who was not an ordained clergyman was considered to be in league with The Devil! For obvious reasons, the line between fooling the eye with sleight of hand and charging the world with magical will, was not clearly differentiated in the early Tarot cards.</span>
+
+            <span class="pBreak">Waite's image of The Magician as the solitary ritualist communing with the spirits of the elements -- with its formal arrangement of symbols -- is a token of the freedom we have in modern times to declare our spiritual politics without fear of reprisal. The older cards were never so explicit about what The Magician was doing. It's best to keep your imagination open with this card. Visualize yourself manifesting something unique, guided by evolutionary forces that emerge spontaneously from within your soul.</span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak">
+            
+            </p>`
         },
         {//array index: 2
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/2.jpg" alt="The Fool Card">`,
@@ -546,35 +571,31 @@ $('.deck7').on('click', function () {
 
         // •• SET UP: function to append data from cards ✔
             // for major arcana
-        const htmlToAppend = function(placeholderSpot) {
-            $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
-        };
-
-            // for non major arcana
-        const htmlToAppend2 = function(placeholderSpot2) {
-            console.log(tarotCardSuite);
-            $(placeholderSpot2).append(`${tarotCardSuite[tarotSuiteIndex].card}`);
-            };
-
-            // reading panel for non-major Arcana.
-            const divHtmlToAppend= function(placeholderSpot3) {
-                $(placeholderSpot3).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
+            const htmlToAppend2 = function(placeholderSpot) {
+                // in placeholder
+                $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
 
                 //div
-                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].title}`);
-                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].generalMeaning}`);
-                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].advice}`);
-            };
+                $(placeholderSpot).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
 
-            // reading panel for major Arcana.
-            const divHtmlToAppend2= function(placeholderSpot3) {
-                $(placeholderSpot3).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
-
-                //div
                 $(".readSpace").append(`${tarotCard.majorArcana[majArcana].title}`);
                 $(".readSpace").append(`${tarotCard.majorArcana[majArcana].generalMeaning}`);
                 $(".readSpace").append(`${tarotCard.majorArcana[majArcana].advice}`);
             };
+
+            // for non major arcana
+            const htmlToAppend = function(placeholderSpot2) {
+                // in placeholder
+                $(placeholderSpot2).append(`${tarotCardSuite[tarotSuiteIndex].card}`);
+
+                //div
+                $(placeholderSpot2).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
+
+                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].title}`);
+                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].generalMeaning}`);
+                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].advice}`);
+                };
+
 
 
 
@@ -586,19 +607,16 @@ $('.deck7').on('click', function () {
 
                 //Placeholder1
                 htmlToAppend(".placeholder1");
-                divHtmlToAppend('.readSpace');
 
             } else if (counter === 2 && num < 14) {
 
                 // Placeholder 2
                 htmlToAppend(".placeholder2");
-                divHtmlToAppend(".readSpace");
 
             } else if (counter === 3 && num < 14) {
 
                 //Placeholder 3
                 htmlToAppend(".placeholder3");
-                divHtmlToAppend(".readSpace");
 
             } else {
                 alert ('Please Refresh To Pull Again');
@@ -610,19 +628,16 @@ $('.deck7').on('click', function () {
 
                 // Placeholder1
                 htmlToAppend2(".placeholder1");
-                divHtmlToAppend(".readSpace");
 
             } else if (counter === 2 && num > 14) {
 
                 // Placeholder2
                 htmlToAppend2(".placeholder2");
-                divHtmlToAppend(".readSpace");
 
             } else if (counter === 3 && num > 14) {
 
                 // Placeholder3
                 htmlToAppend2(".placeholder3");
-                divHtmlToAppend(".readSpace");
 
             } else {
                 alert ('Please Refresh To Pull Again');
@@ -641,8 +656,8 @@ $('.deck7').on('click', function () {
         console.log('4. suiteIndex: ', suiteIndex); // ✔
         console.log('5. findSuite: ', findSuite); // ✔
         console.log('6. majorArcana:', tarotCard.majorArcana);
-        console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title); // ✔
-        console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title) // ✔
+    console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card ); // ✔
+    console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
         console.log(`9. non maj arcana: ${tarotCardSuite[tarotSuiteIndex].card}`); // ✔
         console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ✔
         console.log("11. tarotCardSuite: ", tarotCardSuite);
