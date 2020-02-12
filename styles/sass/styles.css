@@ -765,6 +765,14 @@ input[name="toggle2"]:checked + .instruction {
   top: -100%;
 }
 
+.cardFront:hover, .cardFront:focus {
+  -webkit-transform: scale(200%);
+          transform: scale(200%);
+  z-index: 1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 .headerH2 {
   margin: 0.25% 4%;
   width: 100%;

@@ -159,12 +159,16 @@ tarotCard = {
             title: `<h4 class="pBreak">The Chariot</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Chariot Tarot card points to a triumphal feeling of freedom, as if the Charioteer is being paraded through the streets as a hero (or heroine). The card reflects congratulations for high achievement, and serves as a sign of empowerment.</span>
+
+            <span class="pBreak">Huge wheels and frisky steeds speed the rate at which the driver's will power can be realized. This kind of charge makes more of the world accessible to one ambitious enough to seize The Chariot's reins. But there is danger in this feeling of freedom, because of the increased rate of change and its power to magnify mistakes in judgment. As a seasoned warrior, the Charioteer is called upon to be extra attentive to the way ahead.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Chariot advises that you be prepared for changes that might include a move or an opportunity to travel. The Charioteer travels light and stays open to fresh experiences that change with every valley or mountain pass.</span>
+
+            <span class="pBreak">You may be asked to live out of a suitcase and consider every place your home for a while. Be receptive to new people who come into your life. Most especially, become more fluid and taste the joys of freedom. The Charioteer is nothing if not self-sufficient.</span>
             
             </p>`
         },
@@ -173,12 +177,16 @@ tarotCard = {
             title: `<h4 class="pBreak">The Strength</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Strength Tarot card represents nature, which, however wild in its primal form, is tamed by our subtler, finer self -- our feminine side, our inner self. The will and passion of our instinctive nature does not need to be broken, but refined and brought to consciousness, so that all levels of creation may come into harmony.</span>
+
+            <span class="pBreak">The feminine soul-force contains a persuasive power that can nurture and induce cooperation from others, stilling disruptive energies by harmonizing differences in the spirit of collective good will.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Strength card advises that you assertively discipline yourself and separate self interest from enlightened wisdom. Deliberately identify with your intuition, even if it works against the desires of your willful ego.</span>
+
+            <span class="pBreak">Demand and expect the same from others who have some power in this situation. You cannot challenge them to live to a higher standard if you, yourself, have not yet done so. Influence others by setting an example of integrity. Your self-esteem will increase to the degree that you succeed in your efforts.</span>
             
             </p>`
         },
@@ -187,12 +195,17 @@ tarotCard = {
             title: `<h4 class="pBreak">The Hermit</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">
+            The challenge of The Hermit card is to be able to recognize a teacher in a humble disguise. This font of mysterious knowledge will not make it easy for the student to acquire his wisdom, as it takes time and long contemplation to fathom what he knows. He often speaks wordlessly, or in ancient and barbaric tongues, communicating with the elements, animals, and nature herself.</span>
+
+            <span class="pBreak">While an hourglass was an identifying feature on the earliest Hermit Tarot cards, more modern cards have shifted the metaphor, showing more or less light released from his lantern. In either case, the Hermit card reminds us of the value of time away from the hubbub of civic life, to relax the ego in communion with nature.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Hermit advises that you think things through carefully. The demands on you have been high, giving you scant time for reflection. While you have a gift for understanding the larger implications involved, you need some private time to consider the steps to take in the future. You can't just lock yourself in your room for fifteen minutes and expect to come up with profound solutions. You need more seclusion and time to assimilate and process.</span>
+
+            <span class="pBreak">Now may be the moment for you to tell everyone to leave you alone. When you are fully ready, you will be able and willing to give others what they need.</span>
             
             </p>`
         },
@@ -201,12 +214,16 @@ tarotCard = {
             title: `<h4 class="pBreak">The World</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The central theme of The Wheel of Fortune card is cyclical change. The wheel keeps on rolling, churning events in a ceaseless progression of ups and downs, either way freeing us from the past. No one can escape its cyclical action, which can feel somewhat terrifying -- no matter whether we are rising or falling. When one is balanced on top of the wheel, there is a moment of crystal clarity. However, the only part of the wheel that's actually not going up and down is the hub, which represents your eternal self.</span>
+
+            <span class="pBreak">Every one of us will occupy all the points on the wheel at one point or another. The cycle of the wheel is its lesson -- and we can learn to take comfort in it. If you don't like the look of things right now, just wait -- things will change. Of course, if you do like the look of things right now, enjoy it while it lasts, because that will change too!</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Wheel of Fortune advises you follow the flow of events. Physical moves, spiritual awakenings, or dramatically changing social patterns could arise now. Accept these transformations.</span>
+
+            <span class="pBreak">This is a safe place for you to be. You are watched over and protected as you go round and round the wheel. You will learn a lot. You will also learn it quickly, and what you absorb will benefit you for a long time to come.</span>
             
             </p>`
         },
@@ -215,12 +232,16 @@ tarotCard = {
             title: `<h4 class="pBreak">The Justice</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Justice Tarot card has to do with moral sensitivity and that which gives rise to empathy, compassion, and a sense of fairness. Since the time of Solomon, this image has represented a standard for the humane and fair-minded treatment of other beings.</span>
+
+            <span class="pBreak">Often including the image of a fulcrum or scale which helps to balance competing needs against the greater good, and a two-edged sword to symbolize the precision needed to make clear judgments, this card reminds us to be careful to attend to important details. It's a mistake to overlook or minimize anything where this card is concerned. The law of karma is represented here -- what goes around comes around.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Justice card advises you to listen carefully as others explain to you their version of events and the parts they played. It is unnecessary to offer feedback. Your role is to observe, listen closely, give a full hearing and keep your wits about you as the story takes shape.</span>
+
+            <span class="pBreak">As you witness people's account of themselves, your understanding will go beyond the words you hear. Subtle inferences and clues will reveal the truths that will enable you to make a wise and accurate assessment.</span>
             
             </p>`
         },
@@ -229,12 +250,16 @@ tarotCard = {
             title: `<h4 class="pBreak">The Hanged Man</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Hanged Man usually indicates a lack of ability to help oneself through independent action. The energy is arrested and awaiting judgment. With this card, there is no avenue for the will to regain control until the situation has passed.</span>
+
+            <span class="pBreak">This represents a good time to be philosophical, to study and meditate upon the position you find yourself in, and to form resolutions for the moment you become free again. Only those who possess wisdom, patience, and optimism will be able to see through limitations, including possible humiliation, to grasp the inspiring lesson one can gain from such an experience.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Hanged Man advises you to surrender illusions of control. Accept that you have been overcome and deceived by your own devices. Having made your bed, you now need to lie in it. This is not a negative judgment. It's just that sometimes there are consequences for being in the wrong place at the wrong time. Bad things can happen to good people. These consequences are not fatal, even if they are inconvenient -- or perhaps even embarrassing.</span>
+
+            <span class="pBreak">Stop resisting your circumstances and let some time go by. Eventually, you will be released a little wiser and not much the worse for wear. You will come to realize in time how you collaborated with the problem. However, the issues you were stuck on when you were first hung up have subsided and no longer concern you. You are free to take up new endeavors. You will ultimately feel refreshed and grateful that you were derailed from your former track.</span>
             
             </p>`
         },
@@ -255,38 +280,86 @@ tarotCard = {
         {//array index: 15
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/14.jpg" alt="Temperance">`,
             title: `<h4 class="pBreak">Temperance</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`
         },
         {//array index: 16
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/15.jpg" alt="The Devil">`,
             title: `<h4 class="pBreak">The Devil</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`
         },
         {//array index: 17
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/16.jpg" alt="The Tower">`,
             title: `<h4 class="pBreak">The Tower</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`
         },
         {//array index: 18
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/17.jpg" alt="The Star">`,
             title: `<h4 class="pBreak">The Star</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`
         },
         {//array index: 19
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/18.jpg" alt="The Moon">`,
             title: `<h4 class="pBreak">The Moon</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`
         },
         {//array index: 20
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/19.jpg" alt="The Sun">`,
             title: `<h4 class="pBreak">The Sun</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak"></span>
+            
+            </p>`
         },
         {//array index: 21
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/20.jpg" alt="Judgement">`,
