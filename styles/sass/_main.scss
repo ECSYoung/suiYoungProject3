@@ -150,6 +150,7 @@ input[name="toggle2"]:checked+.instruction {
     margin: 0 auto;
     padding: 1%;
     border-radius: 25px;
+    overflow: auto;
 }
 
 textarea {
