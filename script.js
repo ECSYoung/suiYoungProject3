@@ -9,7 +9,8 @@ $('.buttonStyle').on('click', function() {
     $('placeholder1').empty();
     $('placeholder2').empty();
     $('placeholder3').empty();
-    $('.readout').empty();
+    $('.readSpace').empty();
+    console.log('.buttonStyle');
 });
 
 // set up arrays:
@@ -501,28 +502,18 @@ suites = [
     'pentacles' //3
 ]// end of card arrays
 
-// declare global variables 
-let suiteIndex;
-let findSuite;
-let majArcana;
-let counter = 0;
-
 let num = Math.round(Math.random() * 35) + 1;
 
 // function that ill provide a randomNumber
 function getRandom(arrayLength) {
     return Math.floor(Math.random() * arrayLength);
-}
+;}
 
-// function to append
-const htmlToAppend = function(placeholderSpot) {
-    $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
-
-    //div
-    $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].title}`);
-    $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].generalMeaning}`);
-    $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].advice}`);
-}
+// declare global variables 
+let suiteIndex;
+let findSuite;
+let majArcana;
+let counter = 0;
 
 
 // 🌎 END GLOBAL SCOPE •••
@@ -543,10 +534,7 @@ $('.deck7').on('click', function () {
             suiteIndex = getRandom(suites.length); // gives # for [#]
             //return Int value for suit index, use value to search suites array for value and console.log it.
             console.log(suiteIndex);            
-            findSuite = suites[suiteIndex];
-            // console.log(findSuite);
-            // console.log(suites);
-            // console.log(findSuite);  
+            findSuite = suites[suiteIndex];  
             
             //append reading to read panel
             // $('.readSpace').append("<li>" + "You've pulled " + num + " of " + findSuite + "</li>");            
@@ -556,59 +544,82 @@ $('.deck7').on('click', function () {
             console.log(num); 
             majArcana = getRandom(tarotCard.majorArcana.length); 
             //return Int value for majorArcana index
-            console.log(majArcana);
-            console.log(tarotCard.majorArcana[majArcana].title);
         };
 
-        // append reading to appropriate placeholders
-        //click counter
-        
+        // •••append reading to appropriate placeholders
+        //click counter        
         counter ++;
         console.log('counter', counter)
 
-        // console log to check strings
-        console.log(`non maj arcana: ${tarotCard[findSuite][suiteIndex].card}`)
+        // •• function to append data from cards
+        const htmlToAppend = function(placeholderSpot) {
+            $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
+        };
 
-        console.log(`maj arcana: ${tarotCard.majorArcana[majArcana].card}`)
+        const htmlToAppend2 = function(placeholderSpot2) {
+            $(placeholderSpot2).append(`${tarotCard[findSuite][suiteIndex].card}`);
+        };
+
+        const divHtmlToAppend= function(placeholderSpot3) {
+            $(placeholderSpot3).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
+
+            //div
+            $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].title}`);
+            $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].generalMeaning}`);
+            $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].advice}`);
+        };
+
+        // •• console log to check strings
+        console.log('majArcana:', majArcana);
+        console.log('majorArcana:', tarotCard.majorArcana);
+        console.log('major Arcana Title:',tarotCard.majorArcana[majArcana].title);
+        console.log('suiteIndex: ', suiteIndex);
+        console.log('findSuite: ', findSuite);
+        console.log('findsuite[suiteIndex]:', findSuite[suiteIndex])
+        console.log(`non maj arcana: ${tarotCard[findSuite][suiteIndex].card}`);
+        console.log(`maj arcana: ${tarotCard.majorArcana[majArcana].card}`);
+        
         //end check
 
-        // append depending on counter value
+        // •• append depending on counter value
         if (counter === 1 && num < 14) {
-            console.log('clicked once');
 
             //Placeholder1
             htmlToAppend(".placeholder1");
+            divHtmlToAppend('.readSpace');
 
         } else if (counter === 1 && num > 14) {
-            console.log('clicked once');
 
             // Placeholder1
-            htmlToAppend(".placeholder1");
+            htmlToAppend2(".placeholder1");
+            divHtmlToAppend(".readSpace");
 
         } else if (counter === 2 && num > 14) {
-            console.log('clicked a second time');
 
             // Placeholder2
-            htmlToAppend(".placeholder2");
+            htmlToAppend2(".placeholder2");
+            divHtmlToAppend(".readSpace");
 
         } else if (counter === 2 && num < 14) {
-            console.log('clicked a second time');
 
             // Placeholder 2
             htmlToAppend(".placeholder2");
+            divHtmlToAppend(".readSpace");
 
         } else if (counter === 3 && num < 14) {
-            console.log('clicked a third time');
 
             //Placeholder 3
             htmlToAppend(".placeholder3");
+            divHtmlToAppend(".readSpace");
 
         } else if (counter === 3 && num > 14) {
-            console.log('clicked a third time');
 
             // Placeholder3
-            htmlToAppend(".placeholder3");
-        
+            htmlToAppend2(".placeholder3");
+            divHtmlToAppend(".readSpace");
+
+        } else {
+            alert ('Please Refresh To Pull Again');
         };
     
 });
