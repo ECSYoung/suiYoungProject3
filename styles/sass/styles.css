@@ -495,7 +495,7 @@ button:active {
 
 .pBreak {
   display: block;
-  margin: 3rem 0;
+  margin: 0;
   word-wrap: break-word;
 }
 
