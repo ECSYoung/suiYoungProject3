@@ -558,10 +558,7 @@ $('.deck7').on('click', function () {
             //return Int value for majorArcana index
             console.log(majArcana);
             console.log(tarotCard.majorArcana[majArcana].title);
-                //for fun, append results to p:
-
-            $('.readSpace').append("<li>" + "You've pulled " + tarotCard.majorArcana[majArcana].title + "</li>");
-        }
+        };
 
         // append reading to appropriate placeholders
         //click counter

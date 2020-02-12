@@ -135,11 +135,6 @@ img {
     box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
 }
 
-button:active {
-    box-shadow: inset 10px 5px 17px 0px rgba(0,0,0,0.92);
-}
-
-
 
 // accessibility focused hiding of labels.
 .visually-hidden:not(:focus):not(:active) { 
