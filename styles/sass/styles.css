@@ -745,6 +745,11 @@ input[name="toggle2"]:checked + .instruction {
   margin: 8% auto;
 }
 
+.cardFront {
+  position: relative;
+  top: -100%;
+}
+
 .headerH2 {
   margin: 0.25% 4%;
   width: 100%;
