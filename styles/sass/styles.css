@@ -397,13 +397,6 @@ img {
   display: block;
 }
 
-.pBreak2 {
-  display: block;
-  word-wrap: break-word;
-  width: 100%;
-  display: block;
-}
-
 .buttonStyle {
   font-family: 'Oswald', sans-serif;
   width: 10vh;
@@ -490,7 +483,7 @@ img {
 
 .pBreak {
   display: block;
-  margin: 0;
+  margin-bottom: 2%;
   word-wrap: break-word;
 }
 
