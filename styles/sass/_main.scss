@@ -130,7 +130,7 @@ input[name="toggle2"]:checked+.instruction {
     top: -100%;
 }
 
-.cardFront:hover, .cardFront:focus {
+.cardFront:hover, .cardFront:active {
     transform: scale(200%);
     z-index: 1;
     transition: all 1s ease-in-out;

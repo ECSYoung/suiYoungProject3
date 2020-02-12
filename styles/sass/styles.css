@@ -765,7 +765,7 @@ input[name="toggle2"]:checked + .instruction {
   top: -100%;
 }
 
-.cardFront:hover, .cardFront:focus {
+.cardFront:hover, .cardFront:active {
   -webkit-transform: scale(200%);
           transform: scale(200%);
   z-index: 1;

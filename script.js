@@ -268,12 +268,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Death</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Death card is not about the literal death of any person. It may represent the death of something else, like a project, plan, or relationship. This card also points to a time of harvest, symbolized in classical decks by the reaping skeleton. Unless the fruits of summer are harvested, they are lost to winter's harshness, and the people do not eat. As the scythe cuts the cords that link us to the past, it liberates us to go forward without fear, because we have nothing left to lose. Everything being pruned away is recycled for the fertility of the future, so that nothing is really ever lost, despite seasonal cycles of gain and loss.</span>
+
+            <span class="pBreak">In more modern Tarot decks, we see Death mounted on a horse and wearing black armor. The emphasis in these decks is on the punishment of sin, as in the way the medieval Plague (which the Death image was based on) was used to explain the wrath of God. Luckily, in modern times, we are not so encumbered with such a guilt-ridden philosophy.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Death card advises you to detach from the old order. You may want to close accounts, complete unfinished tasks, and gather your harvest. It is time to move on. If you cut the cords that have bound you to old ways and outdated conventions, you could free yourself to join the sweep of incoming light. This is not an excuse to reject others or hurt them in any way. It is simply a time to move toward your ultimate interests.</span>
+
+            <span class="pBreak">Do not allow nostalgia and outworn loyalties to hold you back. Be willing to go through whatever it takes to get to where you really want to be.</span>
             
             </p>`
         },
@@ -282,12 +286,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Temperance</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Temperance card is a reference to the soul. Classically female, the woman or angel on the Temperance card is mixing up a blend of subtle energies for the evolution of the personality. One key to interpreting this card can be found in its title -- a play on the process of tempering metals in a forge.</span>
+
+            <span class="pBreak">Metals must undergo extremes of temperature, folding, and pounding, but the end product is infinitely superior to impure ore mined from the earth. In this image, the soul volunteers the ego for a cleansing and healing experience, which may turn the personality inside-out, but which brings out the gold hidden within the heart.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Temperance card advises you to identify and seek the missing ingredients in your life. Marshal your known skills and abilities and do what needs to be done to complete your mission.</span>
+
+            <span class="pBreak">Prepare to use spiritual practices, studies, or lifestyle changes that can assist you in your quest. A tremendous amount of benefit is available if you can organize yourself and be disciplined at this time.</span>
             
             </p>`
         },
@@ -296,12 +304,14 @@ tarotCard = {
             title: `<h4 class="pBreak">The Devil</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Devil Tarot card expresses the realm of the taboo -- the culturally rejected wildness and undigested shadow side that each of us carries in our subconscious. This shadow is actually at the core of our being, which we cannot get rid of and will never succeed in taming. From its earliest versions, which portrayed a vampire-demon, The Devil evoked the church-fueled fear that a person could "lose their soul" to wild and passionate forces.<span>
+
+            <span class="pBreak">The Devil image which emerged in the mid-1700s gives us a more sophisticated rendition -- that of the "scapegoated goddess," whose esoteric name is Baphomet. Volcanic reserves of passion and primal desire empower her efforts to overcome the pressure of stereotyped roles and experience true freedom of soul.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Devil card advises that you show some spunk. There may be nothing to be gained by trying to be subtle or strategic in this situation. Assert your agenda, express yourself honestly, and let the chips fall where they may. Your best bet could be to express your true emotions, possibly even including anger. Acknowledge that you have whatever feelings you have. While it may not be necessary to act out what you feel in every situation, accepting the power and depth of your inner experience enables you to remain true to yourself.</span>
             
             </p>`
         },
@@ -310,12 +320,16 @@ tarotCard = {
             title: `<h4 class="pBreak">The Tower</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">In practically all renditions of the Tower card, disaster is striking or has just struck. The demons of madness and despair are released from ancient hiding places, and nature conspires with human failings to destabilize a society. The upheaval is collective and impersonal. Let us remember these images were created for the educated nobles and clergy -- reminding them that they have the most to lose if the hierarchy is toppled.</span>
+
+            <span class="pBreak">Lightning is a fitting karmic payback for the guilt of those whose fortunes come from the exploitation or abuse of others. A modern subtitle might be "revolution," indicating that through drastic social change, oppressed people can find renewed hope of better times. The Tower experience comes like a flash of lightning to topple the hierarchy of the old order, after which everyone can have a fresh start on a more equal footing.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">With the Tower card, think of yourself as an agent of transformation. This self-sacrificing role is likely to create stressful situations. Your vision shows you that a radical change has already been unleashed by forces much larger than mere mortals, and therefore you are no longer resisting.</span>
+
+            <span class="pBreak">Now you may be at the forefront, acknowledging and accepting the bracing presence of the future bursting in on the present. Try to mediate the harsher parts of the changes as they unfold, so the most vulnerable are the most cushioned. Acknowledge yourself, as well as the others in your life, who are offering their resources to usher in a better future.</span>
             
             </p>`
         },
@@ -324,12 +338,16 @@ tarotCard = {
             title: `<h4 class="pBreak">The Star</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Star Tarot card is about reconnecting one's soul with the divine -- the transcending of personality, family, community, and reputation. It has to do ultimately with the freedom to be one's self. The soul is responding to celestial influences -- forces that can provide the personality with a stronger sense of purpose. The Star card helps us to remember our exalted origins and our attraction to a higher union.</span>
+
+            <span class="pBreak">This card could also be called The Celestial Mandate -- that which refers us back to our reason for being, our mission in this lifetime. The Star reminds us that, in a sense, we are agents of divine will in our day-to-day lives. If we let go of the idea that we are supposed to be in control, we can more easily notice and appreciate the synchronicities that are nudging us along. In this way, we become more conscious of the invisible helping hand, and we better understand our place within -- and value to -- the larger cosmos.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Star card advises that you rededicate yourself to your higher values, increase your spiritual cultivation and meditation practice, and surrender to the greater good. Connect to your higher self -- a being of a larger realm traveling on an evolutionary course that started long ago and runs indefinitely into the future. This is the part you wish to contact and communicate with.</span>
+
+            <span class="pBreak">Now is a period for quiet contemplation. Listen for the voice within. Anything that would interfere with this communion may not be serving your best interests right now.</span>
             
             </p>`
         },
@@ -338,18 +356,74 @@ tarotCard = {
             title: `<h4 class="pBreak">The Moon</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Moon card refers to a deep state of sensitivity and imaginative impressionability, developed within a womb of deep relaxation. Here we dream and go into trance, have visions and receive insights, wash in and out with the psychic tides, and experience deep mystical and/or terrifying realities beyond our ordinary senses. In a state of expanded consciousness, we cannot always control what happens. The Moon card represents the ultimate test of a soul's integrity, where the membrane between the self and the unknown is removed, and the drop of individuality re-enters the ocean of being. What transpires next is between a soul and its maker.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Moon card advises that you trust your instincts and intuitions. Your aboriginal body, which is connected to all living things, is sharper and quicker than the cultivated, civilized self. The everyday mind may not be prepared for strange oceanic circumstances. Plus, it has no game plan. Your intuitive body will support you unerringly if you do not interfere with or try to control what you perceive. A better approach would be to meditate. Try to just be a witness. Do nothing; let nature carry you forward. This may be your best option in this situation.</span>
             
             </p>`
         },
         {//array index: 20
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/19.jpg" alt="The Sun">`,
             title: `<h4 class="pBreak">The Sun</h4>`,
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak">The Sun card is about the self -- who you are and how you cultivate your personality and character. The Sun's radiance is where one's original nature can be encountered in health and safety. The limitations of time and space are stripped away; the soul is refreshed and temporarily protected from the chaos outside the garden walls. Under the light of the Sun, life reclaims its primordial goodness, truth, and beauty. If one person is shown on this card, it is usually signifying a human incarnation of the divine. When two humans are shown, the image is portraying a resolution of the tension between opposites at all levels. It's as if this card is saying "You can do no wrong -- it's all to the good!"</span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak">The Sun card advises you to have confidence in your natural divinity. Throw off any cultural conditioning that keeps you from being authentic with yourself. Step into the full light of truth and reveal your motives and principles. Once done, you will no longer give away power to the people that criticize and shame you. Focus on the positive and the real. Your authentic shining self can be a light for others if you project it without contrivance.</span>
+            
+            </p>`
+        },
+        {//array index: 21
+            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/20.jpg" alt="Judgement">`,
+            title: `<h4 class="pBreak">Judgement</h4>`,
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak">The Judgement card, sometimes called "Resurrection," represents the great reunion that the ancients believed would happen once in every age. This was the time when souls are harvested and taken home to their place of origin, outside the solar system. Then the world is seeded with a batch of new souls and the process starts over.</span>
+
+            <span class="pBreak">From a modern point of view, this great reunion -- which includes every personality that you have ever been and every soul that you have done deep work with -- reunites to consciously complete the process. In a way, we symbolically celebrate this returning to center every year on our birthday.</span>
+
+            <span class="pBreak">In personal terms, the Judgment Tarot card points to freedom from inner conflicts, and so clear a channel, that the buried talents and gifts of past incarnations can come through an individual in this lifetime. This card counsels you to trust the process of opening yourself, because what emerges is of consistently high quality. You can effortlessly manifest as a multi-dimensional being, and assist in evoking that response from others.</span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak">The Judgment card advises that you allow yourself to grow, transform, and release hidden potentials within yourself. Divest yourself of fruitless endeavors without neglecting your duties. At the same time, invest your energies in new growth.</span>
+
+            <span class="pBreak">It's not necessary to reject others, but refuse to be manipulated by those who cry foul. This process isn't about them anyway. It is about you and the desire you feel to change your life and become a more complete person. Trust your impulses and allow this remarkable awakening to happen.</span>
+            
+            </p>`
+        },
+        {//array index: 22
+            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/21.jpg" alt="The World">`,
+            title: `<h4 class="pBreak">The World</h4>`,
+            generalMeaning: `
+            <h5>General Meaning:</h5>
+            <p><span class="pBreak">The World card points to the presiding wisdom which upholds life on this and all worlds. In most Tarot decks, it is a female figure that has become our standard World image. She originates in Hebrew, Gnostic, and Alchemical lore, and stands between heaven and Earth as the cosmic mother of souls, the wife of God, and our protector from the karmic forces we have set loose upon the Earth in our immaturity and ignorance.</span>
+
+            <span class="pBreak">The goddess of The World card invites us into cosmic citizenship -- once we come to realize our soul's potential for it. It announces the awakening of the soul's immortal being, accomplished without the necessity of dying.</span>
+
+            <span class="pBreak">This card, like the Sun, is reputed to have no negative meaning no matter where or how it appears. If the Hermetic axiom is "Know Thyself", this image represents what becomes known when the true nature of self is followed to creative freedom and its ultimate realization.</span>
+            
+            </p>`,
+            advice: `
+            <h5>Advice:</h5>
+            <p><span class="pBreak">The World card may be giving you permission to do whatever you want. Presently, your motivation is close to the will of the divine. Even if you commit an error, it will be turned to the greater good. Stay active and just keep moving forward. It is unnecessary to keep checking or interrupting your spontaneity with calculation. Rather than look for consensus or affirmation from others, simply dance the dance. In other words, express yourself, react naturally, and let the chips fall where they may.</span>
+
+            <span class="pBreak">What matters is divine intention. Whether or not human beings approve is less important. If you allow your ego to inflate, however, you cease to be useful to the greater plan.</span>
+            
+            </p>`
+        }
+    ],
+    wands: [
+        {//array index: 0
+            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/22.jpg" alt="The Ace of Wands">`,
+            title: `<h4 class="pBreak">The Ace of Wands</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
             <p><span class="pBreak"></span>
@@ -360,26 +434,6 @@ tarotCard = {
             <p><span class="pBreak"></span>
             
             </p>`
-        },
-        {//array index: 21
-            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/20.jpg" alt="Judgement">`,
-            title: `<h4 class="pBreak">Judgement</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
-        },
-        {//array index: 22
-            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/21.jpg" alt="The World">`,
-            title: `<h4 class="pBreak">The World</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
-        }
-    ],
-    wands: [
-        {//array index: 0
-            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/22.jpg" alt="The Ace of Wands">`,
-            title: `<h4 class="pBreak">The Ace of Wands</h4>`,
-            generalMeaning: `header`,
-            advice: `p text`
         },
         {//array index: 1
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/23.jpg" alt="2 of Wands">`,
@@ -733,136 +787,170 @@ let num = Math.round(Math.random() * 35) + 1;
 function getRandom(arrayLength) {
     return Math.floor(Math.random() * arrayLength);
 ;}
+
+
+
+// ••• FUNCTION TO OPERATE WITHIN THE EVENT LISTENERS:
+
+const eventFunction = function() {
+    //for major arcana and card number.
+    // •• SET UP: random number generator for cards 1 - 13 + 22 major arcana.
+    let num = Math.round(Math.random() * 35) + 1;
+    suiteIndex = getRandom(suites.length); // gives # for [#] within suite array
+    //return Int value for suit index = 0-3 ✔
+
+    majArcana = getRandom(tarotCard.majorArcana.length);
+    //return Int value for majorArcana index = 0-21 ✔
+
+
+
+    // •• DECLARE: suite variables.
+    findSuite = suites[suiteIndex];  // variable to hold suite of card when not a major arcana = "wands, cups, swords, pentacles" ✔
+
+    tarotCardSuite = tarotCard[findSuite]; // variable to hold non-major arcana suites within main array. ✔
+
+    tarotSuiteIndex = getRandom(tarotCardSuite.length);
+    // console.log(tarotSuiteIndex); //✔
+
+
+    // •• SET UP: click counter  ✔    
+    counter++;
+
+    // •• SET UP: function to append data from cards ✔
+    // for major arcana
+    const htmlToAppend2 = function (placeholderSpot) {
+        // in placeholder
+        $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
+
+        //div
+        $(placeholderSpot).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
+
+        $(".readSpace").append(`${tarotCard.majorArcana[majArcana].title}`);
+        $(".readSpace").append(`${tarotCard.majorArcana[majArcana].generalMeaning}`);
+        $(".readSpace").append(`${tarotCard.majorArcana[majArcana].advice}`);
+    };
+
+    // for non major arcana
+    const htmlToAppend = function (placeholderSpot2) {
+        // in placeholder
+        $(placeholderSpot2).append(`${tarotCardSuite[tarotSuiteIndex].card}`);
+
+        //div
+        $(placeholderSpot2).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
+
+        $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].title}`);
+        $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].generalMeaning}`);
+        $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].advice}`);
+    };
+
+
+
+
+    // •• 📝 LOCAL APPEND WITHIN ON CLICK FUNCTION
+
+    if (num < 14) {//for non-major arcana
+
+        if (counter === 1 && num < 14) {
+
+            //Placeholder1
+            htmlToAppend(".placeholder1");
+
+        } else if (counter === 2 && num < 14) {
+
+            // Placeholder 2
+            htmlToAppend(".placeholder2");
+
+        } else if (counter === 3 && num < 14) {
+
+            //Placeholder 3
+            htmlToAppend(".placeholder3");
+
+        } else {
+            alert('Please Refresh To Pull Again');
+        };
+
+    } else if (num > 14) { //for major arcana
+
+        if (counter === 1 && num > 14) {
+
+            // Placeholder1
+            htmlToAppend2(".placeholder1");
+
+        } else if (counter === 2 && num > 14) {
+
+            // Placeholder2
+            htmlToAppend2(".placeholder2");
+
+        } else if (counter === 3 && num > 14) {
+
+            // Placeholder3
+            htmlToAppend2(".placeholder3");
+
+        } else {
+            alert('Please Reset To Pull Again');
+        };
+    };
+};
 // 🌎 END GLOBAL SCOPE •••
 
-        
 
 // 🏡 LOCAL SCOPE START•••
 
         // •• 🧠 LOGIC: if num returns a value under 14, search in the suite array for the suite. Use the returned suite value to find the array in 'tarotCard' object.
         // Use a variable assigned to RNG and use RNG as index for random search within suite array for a card number, and return value in console log/append to read panel.
 
-$('.deck7').on('click', function () {
-    //for major arcana and card number.
-        // •• SET UP: random number generator for cards 1 - 13 + 22 major arcana.
-        let num = Math.round(Math.random() * 35) + 1;
-        suiteIndex = getRandom(suites.length); // gives # for [#] within suite array
-        //return Int value for suit index = 0-3 ✔
+    // •• on mouse click:
+    $('.deck7').on('click', function () {
+        eventFunction();
 
-        majArcana = getRandom(tarotCard.majorArcana.length); 
-        //return Int value for majorArcana index = 0-21 ✔
+            // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
+            // •• console log to check strings
+            console.log('Testing of variables:');
+            console.log('1. num result:', num);
+            console.log("2. counter", counter);
+            console.log('3. majArcana:', majArcana);
+            console.log('4. suiteIndex: ', suiteIndex); // ✔
+            console.log('5. findSuite: ', findSuite); // ✔
+            console.log('6. majorArcana:', tarotCard.majorArcana);
+            console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card ); // ✔
+            console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
+            console.log(`9. non maj arcana: ${tarotCardSuite[tarotSuiteIndex].card}`); // ✔
+            console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ✔
+            console.log("11. tarotCardSuite: ", tarotCardSuite);
+            console.log("12. tarotCard the Array: ", tarotCard);
 
-        
+            //end check
 
-        // •• DECLARE: suite variables.
-        findSuite = suites[suiteIndex];  // variable to hold suite of card when not a major arcana = "wands, cups, swords, pentacles" ✔
+    });
 
-        tarotCardSuite = tarotCard[findSuite]; // variable to hold non-major arcana suites within main array. ✔
-
-        tarotSuiteIndex = getRandom(tarotCardSuite.length);
-        // console.log(tarotSuiteIndex); //✔
-
-
-        // •• SET UP: click counter  ✔    
-        counter ++;
-
-        // •• SET UP: function to append data from cards ✔
-            // for major arcana
-            const htmlToAppend2 = function(placeholderSpot) {
-                // in placeholder
-                $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
-
-                //div
-                $(placeholderSpot).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
-
-                $(".readSpace").append(`${tarotCard.majorArcana[majArcana].title}`);
-                $(".readSpace").append(`${tarotCard.majorArcana[majArcana].generalMeaning}`);
-                $(".readSpace").append(`${tarotCard.majorArcana[majArcana].advice}`);
-            };
-
-            // for non major arcana
-            const htmlToAppend = function(placeholderSpot2) {
-                // in placeholder
-                $(placeholderSpot2).append(`${tarotCardSuite[tarotSuiteIndex].card}`);
-
-                //div
-                $(placeholderSpot2).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
-
-                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].title}`);
-                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].generalMeaning}`);
-                $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].advice}`);
-                };
-
-
-
-
-        // •• 📝 LOCAL APPEND WITHIN ON CLICK FUNCTION
-
-        if (num < 14) {//for non-major arcana
-
-            if (counter === 1 && num < 14) {
-
-                //Placeholder1
-                htmlToAppend(".placeholder1");
-
-            } else if (counter === 2 && num < 14) {
-
-                // Placeholder 2
-                htmlToAppend(".placeholder2");
-
-            } else if (counter === 3 && num < 14) {
-
-                //Placeholder 3
-                htmlToAppend(".placeholder3");
-
-            } else {
-                alert ('Please Refresh To Pull Again');
-            };
-
-        } else if (num > 14) { //for major arcana
-
-            if (counter === 1 && num > 14) {
-
-                // Placeholder1
-                htmlToAppend2(".placeholder1");
-
-            } else if (counter === 2 && num > 14) {
-
-                // Placeholder2
-                htmlToAppend2(".placeholder2");
-
-            } else if (counter === 3 && num > 14) {
-
-                // Placeholder3
-                htmlToAppend2(".placeholder3");
-
-            } else {
-                alert ('Please Refresh To Pull Again');
-            };
+    //  •• on key press (space)
+$(document).keydown(function(e){
+    e.preventDefault();
+        if (e.which === 32) { 
+            // logic for enter key}
+            eventFunction();
         };
-        
-
-        
-
-        // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
-        // •• console log to check strings
-        console.log('Testing of variables:');
-        console.log('1. num result:', num);
-        console.log("2. counter", counter);
-        console.log('3. majArcana:', majArcana);
-        console.log('4. suiteIndex: ', suiteIndex); // ✔
-        console.log('5. findSuite: ', findSuite); // ✔
-        console.log('6. majorArcana:', tarotCard.majorArcana);
-        console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card ); // ✔
-        console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
-        console.log(`9. non maj arcana: ${tarotCardSuite[tarotSuiteIndex].card}`); // ✔
-        console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ✔
-        console.log("11. tarotCardSuite: ", tarotCardSuite);
-        console.log("12. tarotCard the Array: ", tarotCard);
-
-        //end check
-
+        if (e.which === 73) {
+            $('input[name="toggle2"]:checked').click();
+        }
 });
+
+//  •• on key press (space)
+$(window).keydown(function (e) {
+    e.preventDefault();
+    if (e.which === 38) {
+
+        $('.readSpace').scrollTop(-300);
+    };
+    if (e.which === 40) {
+        $('.readSpace').scrollTop(300);
+    }
+    if (e.which === 82) {
+        location.reload();    
+    };
+});
+    
+    
 // 🏡 LOCAL SCOPE END •••
 
 
