@@ -44,11 +44,11 @@ input[name="toggle2"]:checked+.instruction {
 .blackDiv {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 12vh);
     background: rgba(0, 0, 0, 0.788);
     padding: 0 5rem;
     margin-top: 1rem;
-    border-radius: 10rem;
+    border-radius: 8% 8% 0 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -62,7 +62,7 @@ input[name="toggle2"]:checked+.instruction {
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-gap: 20px;
     width: 100%;
-    height: 150vh;
+    height: 90vh;
     margin: 0 auto;
     justify-content: center;
 }
@@ -73,7 +73,7 @@ input[name="toggle2"]:checked+.instruction {
     display: flex;
     width: 50vw;
     height: 15vw;
-    margin: auto;
+    margin: 1% auto;
     justify-content: center;
 }
 
@@ -89,7 +89,6 @@ input[name="toggle2"]:checked+.instruction {
     border: 2px dashed white;
     border-radius: 1vw;
     margin: 1%;
-
 }
 
 .deck {
@@ -104,11 +103,16 @@ input[name="toggle2"]:checked+.instruction {
     transform: rotate(25deg);
 }
 
-.deck7mg:hover+.deck {
+.deck7:hover~.deck {
     box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
 
-.deck:active {
+.deck6:hover~.deck {
+    box-shadow: 5px 5px 15px white, -5px -5px 15px white;
+}
+
+.deck:active,
+.deck:focus {
     box-shadow: inset 5px 5px 15px rgb(0, 0, 0), inset -5px -5px 15px rgb(0, 0, 0);
 }
 
@@ -116,27 +120,26 @@ input[name="toggle2"]:checked+.instruction {
     width: 90%;
     height: 90%;
     background: rgb(142, 183, 245);
-
-    border-radius: 1.5vw;
+    border-radius: 10%;
+    ;
     margin: 8% auto;
 }
 
 .headerH2 {
-    margin: 1.5% 3%;
+    margin: 0.25% 4%;
     width: 100%;
 }
 
 .textReading {
     width: 100%;
     background: #f6f6f680;
-    height: 125vh;
-    border-radius: 50px;
-    margin-top: 2rem;
+    height: 60vh;
+    border-radius: 50px 50px 0 0;
+    margin: 0rem auto;
     grid-area: 2 / span 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .readSpace {

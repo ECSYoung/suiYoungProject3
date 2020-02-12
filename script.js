@@ -574,8 +574,8 @@ $('.deck7').on('click', function () {
         console.log('1. num result:', num);
         console.log("2. counter", counter);
         console.log('3. majArcana:', majArcana);
-        console.log('4. suiteIndex: ', suiteIndex);
-        console.log('5. findSuite: ', findSuite);
+        console.log('4. suiteIndex: ', suiteIndex); // ❌
+        console.log('5. findSuite: ', findSuite); // ❌
         console.log('6. majorArcana:', tarotCard.majorArcana);
         console.log('7. major Arcana Title:',tarotCard.majorArcana[majArcana].title); // ❌
         console.log('8. findSuite[suiteIndex]:', findSuite[suiteIndex]) // ❌
