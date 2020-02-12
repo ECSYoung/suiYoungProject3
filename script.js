@@ -526,27 +526,18 @@ $('.deck7').on('click', function () {
     //for major arcana and card number.
         // •• SET UP: random number generator for cards 1 - 13 + 22 major arcana.
         let num = Math.round(Math.random() * 35) + 1;
-
-        if (num < 14) {//for non-major arcana
-
-            suiteIndex = getRandom(suites.length); // gives # for [#] within suite array
-            //return Int value for suit index = 0-3 ❌
-
-            findSuite = suites[suiteIndex];  // variable to hold suite of card when not a major arcana = "wands, cups, swords, pentacles" ❌
-            
-            //  DELETE: append reading to read panel
-            // $('.readSpace').append("<li>" + "You've pulled " + num + " of " + findSuite + "</li>");            
-
-
-        } else if (num > 14) { //for major arcana
-            majArcana = getRandom(tarotCard.majorArcana.length); 
-            //return Int value for majorArcana index = 0-21 ✔ 
-        };
+        suiteIndex = getRandom(suites.length); // gives # for [#] within suite array
+        //return Int value for suit index = 0-3 ❌
         
+        findSuite = suites[suiteIndex];  // variable to hold suite of card when not a major arcana = "wands, cups, swords, pentacles" ❌
+
         // •••append reading to appropriate placeholders
         // •• SET UP: click counter  ✔    
         counter ++;
 
+        majArcana = getRandom(tarotCard.majorArcana.length); 
+        //return Int value for majorArcana index = 0-21 ✔
+        
         // •• SET UP: function to append data from cards ✔
         const htmlToAppend = function(placeholderSpot) {
             $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
@@ -564,6 +555,21 @@ $('.deck7').on('click', function () {
             $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].generalMeaning}`);
             $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].advice}`);
         };
+
+        if (num < 14) {//for non-major arcana
+
+
+            
+            //  DELETE: append reading to read panel
+            // $('.readSpace').append("<li>" + "You've pulled " + num + " of " + findSuite + "</li>");            
+
+
+        } else if (num > 14) { //for major arcana
+
+        };
+        
+
+        
 
         // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
         // •• console log to check strings
