@@ -13,6 +13,12 @@ $('.buttonStyle').on('click', function() {
     console.log('.buttonStyle');
 });
 
+// declare global variables 
+let suiteIndex;
+let findSuite;
+let majArcana;
+let counter = 0;
+
 // set up arrays:
 tarotCard = {
     majorArcana: [
@@ -509,11 +515,6 @@ function getRandom(arrayLength) {
     return Math.floor(Math.random() * arrayLength);
 ;}
 
-// declare global variables 
-let suiteIndex;
-let findSuite;
-let majArcana;
-let counter = 0;
 
 
 // 🌎 END GLOBAL SCOPE •••
@@ -530,10 +531,8 @@ $('.deck7').on('click', function () {
         // random search within suite array for a card number, and 
         // return value in console log/append to read pannel.
         if (num < 14) {//for non-major arcana
-            console.log(num);
             suiteIndex = getRandom(suites.length); // gives # for [#]
             //return Int value for suit index, use value to search suites array for value and console.log it.
-            console.log(suiteIndex);            
             findSuite = suites[suiteIndex];  
             
             //append reading to read panel
@@ -541,15 +540,13 @@ $('.deck7').on('click', function () {
 
 
         } else if (num > 14) { //for major arcana
-            console.log(num); 
             majArcana = getRandom(tarotCard.majorArcana.length); 
             //return Int value for majorArcana index
         };
-
+        
         // •••append reading to appropriate placeholders
         //click counter        
         counter ++;
-        console.log('counter', counter)
 
         // •• function to append data from cards
         const htmlToAppend = function(placeholderSpot) {
@@ -570,14 +567,17 @@ $('.deck7').on('click', function () {
         };
 
         // •• console log to check strings
-        console.log('majArcana:', majArcana);
-        console.log('majorArcana:', tarotCard.majorArcana);
-        console.log('major Arcana Title:',tarotCard.majorArcana[majArcana].title);
-        console.log('suiteIndex: ', suiteIndex);
-        console.log('findSuite: ', findSuite);
-        console.log('findsuite[suiteIndex]:', findSuite[suiteIndex])
-        console.log(`non maj arcana: ${tarotCard[findSuite][suiteIndex].card}`);
-        console.log(`maj arcana: ${tarotCard.majorArcana[majArcana].card}`);
+        console.log('Testing of variables:');
+        console.log('1. num result:', num);
+        console.log("2. counter", counter);
+        console.log('3. majArcana:', majArcana);
+        console.log('4. suiteIndex: ', suiteIndex);
+        console.log('5. findSuite: ', findSuite);
+        console.log('6. majorArcana:', tarotCard.majorArcana);
+        console.log('7. major Arcana Title:',tarotCard.majorArcana[majArcana].title);
+        console.log('8. findSuite[suiteIndex]:', findSuite[suiteIndex])
+        console.log(`9. non maj arcana: ${tarotCard[findSuite][suiteIndex].card}`);
+        console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`);
         
         //end check
 
