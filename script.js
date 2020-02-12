@@ -6,10 +6,7 @@
 // 🌎 GLOBAL SCOPE •••
 //button to empty inputs:
 $('.buttonStyle').on('click', function() {
-    $('placeholder1').empty();
-    $('placeholder2').empty();
-    $('placeholder3').empty();
-    $('.readSpace').empty();
+    location.reload();
     console.log('.buttonStyle');
 });
 
