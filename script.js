@@ -520,35 +520,37 @@ function getRandom(arrayLength) {
 // 🌎 END GLOBAL SCOPE •••
 
         
+// 🏡 LOCAL SCOPE START•••
+
+        // •• 🧠 LOGIC: if num returns a value under 14, search in the suite array for the suite. Use the returned suite value to find the array in 'tarotCard' object.
+        // Use a variable assigned to RNG and use RNG as index for random search within suite array for a card number, and return value in console log/append to read panel.
 
 $('.deck7').on('click', function () {
     //for major arcana and card number.
-        // random number generator for cards 1 - 13 + 22 major arcana.
+        // •• SET UP: random number generator for cards 1 - 13 + 22 major arcana.
         let num = Math.round(Math.random() * 35) + 1;
-        
-        // if num returns a value under 14, search in the suite array for the suite.
-        // use the returned suite value to find the array in 'tarotCard' object
-        // random search within suite array for a card number, and 
-        // return value in console log/append to read pannel.
+
         if (num < 14) {//for non-major arcana
-            suiteIndex = getRandom(suites.length); // gives # for [#]
-            //return Int value for suit index, use value to search suites array for value and console.log it.
-            findSuite = suites[suiteIndex];  
+
+            suiteIndex = getRandom(suites.length); // gives # for [#] within suite array
+            //return Int value for suit index = 0-3 ❌
+
+            findSuite = suites[suiteIndex];  // variable to hold suite of card when not a major arcana = "wands, cups, swords, pentacles" ❌
             
-            //append reading to read panel
+            //  DELETE: append reading to read panel
             // $('.readSpace').append("<li>" + "You've pulled " + num + " of " + findSuite + "</li>");            
 
 
         } else if (num > 14) { //for major arcana
             majArcana = getRandom(tarotCard.majorArcana.length); 
-            //return Int value for majorArcana index
+            //return Int value for majorArcana index = 0-21 ✔ 
         };
         
         // •••append reading to appropriate placeholders
-        //click counter        
+        // •• SET UP: click counter  ✔    
         counter ++;
 
-        // •• function to append data from cards
+        // •• SET UP: function to append data from cards ✔
         const htmlToAppend = function(placeholderSpot) {
             $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
         };
@@ -566,6 +568,7 @@ $('.deck7').on('click', function () {
             $(".readSpace").append(`${tarotCard[findSuite][suiteIndex].advice}`);
         };
 
+        // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
         // •• console log to check strings
         console.log('Testing of variables:');
         console.log('1. num result:', num);
@@ -574,14 +577,14 @@ $('.deck7').on('click', function () {
         console.log('4. suiteIndex: ', suiteIndex);
         console.log('5. findSuite: ', findSuite);
         console.log('6. majorArcana:', tarotCard.majorArcana);
-        console.log('7. major Arcana Title:',tarotCard.majorArcana[majArcana].title);
-        console.log('8. findSuite[suiteIndex]:', findSuite[suiteIndex])
-        console.log(`9. non maj arcana: ${tarotCard[findSuite][suiteIndex].card}`);
-        console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`);
+        console.log('7. major Arcana Title:',tarotCard.majorArcana[majArcana].title); // ❌
+        console.log('8. findSuite[suiteIndex]:', findSuite[suiteIndex]) // ❌
+        console.log(`9. non maj arcana: ${tarotCard[findSuite][suiteIndex].card}`); // ❌
+        console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ❌
         
         //end check
 
-        // •• append depending on counter value
+        // •• LOCAL APPEND WITHIN ON CLICK FUNCTION
         if (counter === 1 && num < 14) {
 
             //Placeholder1
@@ -623,6 +626,7 @@ $('.deck7').on('click', function () {
         };
     
 });
+// 🏡 LOCAL SCOPE END •••
 
 
 
