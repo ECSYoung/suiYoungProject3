@@ -667,12 +667,18 @@ tarotCard = {
             title: `<h4 class="pBreak">The Ace of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The suit in Tarot known as Cups is also referred to as Chalices or Hearts. It represents the emotional and psychic aspects of life -- fantasy, imagination, feelings, love.</span>
+
+            <span class="pBreak">An Ace of this suit in this position generally shows a hand holding up an overflowing cup, which gives forth an endless stream of water, wine, blood or soma for the people's refreshment and healing.</span>
+
+            <span class="pBreak">This card represents an unfailing source of balm for body, heart and soul. It suggests that you can relax into a safety net of love, support and communion.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Ace of Cups in this position advises you to challenge yourself and discover what is good about every relationship. Practice looking at the world through the eyes of the Divine. Allow your imagination to perceive the spiritual or evolutionary potential in every person and experience.</span>
+
+            <span class="pBreak">Look with the eye of a loving parent or companion upon the people and things you come into contact with. Make a conscious decision to approve of and delight in even the quirky developments that make the world turn. No one can be perfect at such unconditional acceptance. Still the practice will sweeten your day to day life. Your magnetism will increase and more loving people may enter your life. The whole world will benefit as this becomes second nature to you.</span>
             
             </p>`
         },
@@ -681,12 +687,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Two of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Two in this suit signifies a union of souls. This card traditionally describes a romantic relationship, but also includes the idea that all good friendships and partnerships are based on a natural affinity and a deep mutual understanding. As a personal reflection, it can also signify that your mind and your soul are discovering each other, maybe for the first time.</span>
+
+            <span class="pBreak">This card also symbolizes a karmic tie, often portrayed by a wreath or figure-eight ribbon twining around the two cups. Occasionally you see a symbol referring to the union of alchemical opposites (as in sacred sex), pictured as a long-necked flask twined with serpents, its mouth spouting flames, sometimes with wings. This image is from Alchemy, indicating the refining and mutually completing effect of a true and lasting love.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Two of Cups in this position advises you to speak your heart. It may be likely that the person you are trying to connect with feels the same. Still the other needs to hear this more fully. So why not make it clear and why not now?</span>
+
+            <span class="pBreak">The Two of Cups is the image of the heart making a vow. This card advises that you pledge yourself to this friendship and put your heart on the line. You have nothing to lose and everything to gain. Life is a relationship game. It's a great privilege to share with others who are so complementary and compatible.</span>
             
             </p>`
         },
@@ -695,12 +705,14 @@ tarotCard = {
             title: `<h4 class="pBreak">Three of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Three of this suit is often entitled Consent, or simply Yes. This card resonates with a spirit of agreement, mutual support, encouragement and teamwork.</span>
+
+            <span class="pBreak">Often pictured as three women celebrating their connectedness in a dance with lifted cups, it could also be called "sisterhood," a real mutual admiration society. It points to all the benefits of harmonious relationship.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Three of Cups in this position advises that you tune in with your family and fully inform them about what's going on with you. Let them add substance to your ideas with their talent and imagination. Think of this occasion as a celebration, where their support helps you find success in your work. There may be something here for everyone to contribute. Put yourself in the loving hands of your family connections and your trust will be well rewarded. The synergy between you could enhance each individual's talent and creativity. You will love the results!</span>
             
             </p>`
         },
@@ -709,12 +721,14 @@ tarotCard = {
             title: `<h4 class="pBreak">Four of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The suit often named Cups is also referred to as Chalices or Hearts. It represents the emotional and psychic aspects of life -- fantasy, imagination, feelings, love.</span>
+
+            <span class="pBreak">A Four in this suit refers to a restless time, where a person may have become dissatisfied with life, and emotionally uncomfortable. Feeling stagnated, longing for change, the heart ponders its options ... as it should.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Four of Cups in this position wants you to take a clear look at how stalled or distracted you have become. You may have been bogged down by negativity, hopelessness or a sense of limitation. It is not to your advantage, however, to see the world through such a narrow lens. Cut through some of the forces that undermine you, causing you to feel incapable. Sometimes you have to define what you are "for" by defining what you are "against." Decide that you are not as heavy as the cup of earth, not placid as is the cup of water, not turbulent as is the cup of air. Rather, now may be the time to be as aroused as is the cup of fire. This arousal may constitute liberation from the circumstances that may have brought you here.</span>
             
             </p>`
         },
@@ -723,12 +737,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Five of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Five of this suit traditionally portrays the mess that is left after an emotional upheaval, such as a tantrum or fit of rage. Consequences run the gamut from a hangover and lost wages, to abuse and ruined relationships.</span>
+
+            <span class="pBreak">This card is also sometimes called Inheritance, suggesting the cross-generational legacy of such tragedies. Violent family patterns magnified to a much larger scale can become war.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Five of Cups in this position advises you to tighten your belt, make do with less and show more appreciation for the things you do have. If something is truly yours, it cannot be lost. When you are experiencing feelings of loss, it may be because of an inappropriate emotional attachment. If you promise things that you cannot deliver, then you might be setting yourself up for disappointment to follow. In overestimating our abilities, we are forced to face our limits.</span>
+
+            <span class="pBreak">Be grateful that as the cups fell, you lost only three of the five. Two are still intact, pristine and full of sacred energy. Do not cling to the setback. Focus on the potential.</span>
             
             </p>`
         },
@@ -737,12 +755,14 @@ tarotCard = {
             title: `<h4 class="pBreak">Six of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Six of this suit generally represents a refreshing openness and innocence, a willingness to learn and an optimism that things will get better as we advance together in understanding. The traditional title, The Past, reminds us of our original nature, when we were young and enthusiastic, when anything was possible and the future was an open book. We are to remember that this same freshness, those new possibilities, are always available to us, even now.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">When the Six of Cups is in this position, take a look at what is repetitive or cyclical in your life; what links the present situation to the last such experience. A new beginning requires new energy and concentration. Until you analyze the past, you will continue to drift with its current.</span>
+
+            <span class="pBreak">Distill everything that is worthwhile from your memories and get as much value from it as you can. Then use this as motivation for change. Make the very best use of hindsight, employing new strategies and trying new angles on these recurring issues.</span>
             
             </p>`
         },
@@ -751,12 +771,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Seven of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Seven of this suit typically refers to works of the imagination, the use of dream and vision to invent a future different than the life one is currently living. This card reminds us that our outcomes are not set in stone.</span>
+
+            <span class="pBreak">We can raise our hopes and expectations and upgrade our results. Do not be fooled by the title Fantasy which this card is sometimes given -- this card indicates the truly magical quality of awakened imagination.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Seven of Cups in this position advises that you relax your mind and open to the dreams and imaginings your inner child loves to entertain. Allow yourself to imagine a truly positive outcome for this situation. Perform an exercise in creative visualization by relaxing your guard and letting go of your fears.</span>
+
+            <span class="pBreak">As the dreamscape unfolds, your electro-magnetic chemistry is stimulated to a point of achieving greater confidence in yourself and in what you are doing. Even if it's only a temporary break from your fears, this is a helpful exercise because it gives your psyche and body a dose of unlimited thinking and optimism. Think positively -- the results could truly be amazing.</span>
             
             </p>`
         },
@@ -765,12 +789,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Eight of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Eight of this suit is often used to signify a disappointment, emotional setback, betrayal or injury to the heart. Some Tarot decks illustrate this principle showing a young woman who has just been molested and then cast aside by a stranger passing through her village.</span>
+
+            <span class="pBreak">His heartless act has left her vulnerable, with potentially drastic consequences. This is a difficult card, but a realistic one, insofar as it warns against misplaced trust and unguarded vulnerability.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">With the Eight of Cups in this position, look inside and recognize the part of you that still nurses an old grudge from a past injury or trauma. For the most part, your forward-looking self has gotten up and moved along. You are getting on with your life. There may still a part of you, however, that holds out and resists the healing. Are you nursing old wounds from painful losses of faith and trust? If so, now may be a good time to scrutinize your current motives.</span>
+
+            <span class="pBreak">See if you are still being influenced by the part of yourself that cuts short your enthusiastic, optimistic impulses. Do not deny this pessimistic tendency. Failing to recognize the truth only causes repression that flares up in another part of our psyche. Instead, seek to understand and accept the hesitation and the fear you may feel, and come to terms with them. Then you can put some old emotions in their rightful place--out of the way.</span>
             
             </p>`
         },
@@ -779,12 +807,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Nine of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Nine of this suit is sometimes titled Happiness, but it is also known as Victory. The image on several versions of this card often shows an innkeeper doing a brisk business and feeling very happy about it all.</span>
+
+            <span class="pBreak">The rewards of high achievement are not all monetary, however. This happiness also refers to the feelings of fulfillment that come from good service to the community and support of one's family, as well as gratitude for all the blessings in one's life.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Nine of Cups in this position advises that you open yourself to circumstances around you. There may be no need to manage a situation that does not require a lot of control or leadership. The tone of the moment is heartfelt and bonded. It is nurturing. Open up and choose to be receptive. Proceed from your heart, relying on your intuition. This is your truest source of information right now.</span>
+
+            <span class="pBreak">Allow yourself to be attracted to what feels supportive. Avoid what feels harsh, critical and judgmental. If this requires that you change your style, so be it. The results of being intuitive are generally far superior to the results of being emotionally guarded and overly rational.</span>
             
             </p>`
         },
@@ -793,12 +825,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Ten of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Ten of this suit traditionally signifies family and community, often showing a celebratory scene including many generations, crowned by a rainbow signifying the end of hard times.</span>
+
+            <span class="pBreak">See this vision -- love and support extending in all directions -- a huge emotional safety net for everyone.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">With the Ten of Cups in this position, prioritize teamwork over your personal goals. Everyone needs to feel they made a contribution. The crew needs to feel they are all in this together, and everyone needs to be rewarded when the ship comes in.</span>
+
+            <span class="pBreak">It's essential to follow a teamwork approach in order to maximize the benefits for yourself. The good will that will emerge from such an approach will last long after the project is over. You will be generously rewarded later if you take a selfless approach at this time.</span>
             
             </p>`
         },
@@ -807,12 +843,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Page of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">This card is traditionally entitled the Page, but in some modern decks appears as a Princess. In this suit this card represents a poetic, mystical, emotionally open young person, still tender and idealistic, given to flights of imaginative fantasy.</span>
+
+            <span class="pBreak">This energy is exquisitely refined and fine-tuned. It may be that a sense of being grounded in reality has not yet entirely set in, such that he or she is easily tossed about by external forces and events. This person must work to achieve a stronger will and a more calculating mind, to balance and protect all that wonderful sensitivity.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Page of Cups (in some decks, a Princess) in this position advises you to study the best ways to be of service. Strive to discern what would give more pleasure, comfort and emotional security. Then, provide it. Understand that what is happening has little or nothing to do with you personally. The best you can do is to offer support and listen closely.</span>
+
+            <span class="pBreak">Make sure you understand what is needed and serve the situation with loyalty. Look at individuals around you as the embodiment of the Divine, and try to fulfill each one's needs. Be unconcerned with the outcome. Later you will understand why you needed to be in this position.</span>
             
             </p>`
         },
@@ -821,12 +861,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Knight of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">This card is traditionally entitled the Knight, but in some modern decks appears as the Prince. Traditionally, this card in this suit has pictured a homecoming -- portraying a return to his true heart's home after a long journey. Like the prodigal son, he may be returning after long estrangement from all he holds dear.</span>
+
+            <span class="pBreak">His taste for adventure is exhausted -- there is no more romanticizing of battles or travel in strange lands. Now he wants to go where he will be recognized, wanted and welcome -- where he doesn't have to fight at every turn. He has the attitude of one who has become older and wiser, the prodigal son.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Knight of Cups (in some decks, a Prince) in this position advises that you jump into your new situation with both feet. Get involved with what is happening in the present. Think no more about the route you had to travel to get back here. There is no need to be cavalier about what seems familiar.</span>
+
+            <span class="pBreak">Look deeply at the underlying values here. You may find that they represent something you mistakenly rejected in the past. Be humble enough to look at things through new eyes. At a deep level, your heart and soul are being nourished. Don't be tempted to run away again -- this is where you belong. Your entire journey was designed to bring you home with new appreciation.</span>
             
             </p>`
         },
@@ -835,12 +879,16 @@ tarotCard = {
             title: `<h4 class="pBreak">Queen of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">Traditionally, representing the energy of a Queen, this card traditionally portrays a sensitive, vulnerable, omniscient woman who offers unconditional love. She is supremely empathic -- sometimes to a fault. Her caring nature exposes her to everybody else's emotions and needs.</span>
+
+            <span class="pBreak">This person sometimes has difficulty identifying her own best interests in the midst of her responsiveness to others. As a result, she sometimes appears slightly unfocused or perhaps overwhelmed, filled as she is with "spirits". She represents the Grail Queen, as well as the Goddess of the Family.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The Queen of Cups in this position encourages you to be generous, kind and forgiving. Support the ability of others to get what they want. Nevertheless, remember as with anyone in a caretaking position, you have a fine line to walk. You do not want your loved ones or teammates to become complacent or dependent, as if they can take your support for granted with little or no consideration for your needs.</span>
+
+            <span class="pBreak">Cultivate an awareness of love as freely giving and receiving. In the process, help clarify the important difference between receiving energy and taking it. Do not allow your willingness to give be misunderstood or abused, as if it were a weakness.</span>
             
             </p>`
         },
@@ -849,12 +897,16 @@ tarotCard = {
             title: `<h4 class="pBreak">King of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">Traditionally, representing the energy of a King, this card usually portrays a watery background, with a man seated on a throne, holding the Cup of Mystery in his hand. Occasionally, his cup is fulminating like the mouth of a volcano, emanating light, but never boiling over.</span>
+
+            <span class="pBreak">The man in this card doesn't need to speak to communicate strength, passion and commitment. Sometimes he is robed like a priest or shaman. Intense and intuitive, he is a force to be reckoned with.</span>
             
             </p>`,
             advice: `
             <h5>Advice:</h5>
-            <p><span class="pBreak"></span>
+            <p><span class="pBreak">The King of Cups in this position advises that you closely examine your conscience and bring your personal mission into alignment with what is best for everyone. You can then step into your community or situation with integrity and an ability to communicate the highest wisdom.</span>
+
+            <span class="pBreak">As this sweetens the environment, others will be inspired to raise their own motives and intentions to match yours. You will be providing an important kind of leadership that uses strong reassurance to help everyone work together. The most persuasive thing about you is the example of generous behavior that you exhibit -- much more powerful than preaching alone.</span>
             
             </p>`
         }
