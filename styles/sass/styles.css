@@ -547,76 +547,38 @@ canvas {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: 1 / 4;
+  z-index: 2;
 }
 
 .deck2 {
-  position: relative;
-  right: 0.25vw;
-  top: 1.5vw;
-  width: 100%;
-  margin: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  float: left;
+  position: absolute;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 .deck4 {
+  float: left;
   position: absolute;
-  right: 0.50vw;
-  top: 1.75vw;
-  width: 100%;
-  margin: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .deck5 {
+  float: left;
   position: absolute;
-  right: 0.75vw;
-  top: 2vw;
-  width: 100%;
-  margin: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .deck6 {
+  float: left;
   position: absolute;
-  right: 1vw;
-  top: 2.25vw;
-  width: 100%;
-  margin: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .deck7 {
+  float: left;
   position: absolute;
-  right: 1vw;
-  top: -0.5vw;
-  width: 100%;
-  margin: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
 }
@@ -659,7 +621,7 @@ canvas {
   background: #f6f6f6;
   border-radius: 25px;
   padding: 1%;
-  z-index: 2;
+  z-index: 3;
   display: none;
 }
 
@@ -721,6 +683,7 @@ canvas {
   border: 2px dashed white;
   border-radius: 1vw;
   margin: 1%;
+  z-index: 1;
 }
 
 .deck {
@@ -804,7 +767,7 @@ canvas {
   margin: 0 auto;
   padding: 1%;
   border-radius: 25px 25px 0 0;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 textarea {

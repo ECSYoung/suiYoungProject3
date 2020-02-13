@@ -1048,9 +1048,6 @@ suites = [
     'pentacles' //3
 ]// end of card arrays
 
-// make an array for the used cards to append to once drawn 1x // ✔
-usedCards = [];
-
 // first random number generator to start the process. // ✔
 let num = Math.round(Math.random() * 35) + 1;
 
@@ -1095,8 +1092,6 @@ const eventFunction = function () {
         $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
 
         //div
-        $(placeholderSpot).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
-
         $(".readSpace").append(`${tarotCard.majorArcana[majArcana].title}`);
         $(".readSpace").append(`${tarotCard.majorArcana[majArcana].generalMeaning}`);
         $(".readSpace").append(`${tarotCard.majorArcana[majArcana].advice}`);
@@ -1108,16 +1103,29 @@ const eventFunction = function () {
         $(placeholderSpot2).append(`${tarotCardSuite[tarotSuiteIndex].card}`);
 
         //div
-        $(placeholderSpot2).append(`<p>Here Is Your Reading For Draw ${counter}: </p>`);
-
         $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].title}`);
         $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].generalMeaning}`);
         $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].advice}`);
     };
 
     // •• SET UP:  variables to splice used cards.
-    let spliceUsedMaj = usedCards.splice(tarotCard.majorArcana[majArcana], 1);
-    let spliceUsedNotMaj = usedCards.splice(tarotCardSuite[tarotSuiteIndex], 1);
+    let spliceUsedMaj = tarotCard.majorArcana.splice(tarotCard.majorArcana[majArcana], 1);
+    let spliceUsedNotMaj = tarotCardSuite.splice(tarotCardSuite[tarotSuiteIndex], 1);
+
+    // •• SET UP: Download button
+    // source: https://forum.jquery.com/topic/how-to-convert-html-div-to-pdf-format-in-jquery
+    const downloadPdf = function (){
+        $(".readSpace").append(`<button id=download">Download As Pdf</button>`);
+        $('#download').on('click', function(){
+            let doc = new jsPDF();
+            doc.addHTML($('.readSpace'), 15, 15, {
+                'background': '#FFFFFF',
+                'border':'2px solid white',
+                }, function(){
+                    doc.save('myReading.pdf');
+                });
+        });
+    };
 
 
 
@@ -1144,7 +1152,7 @@ const eventFunction = function () {
             //Placeholder 3
             htmlToAppend(".placeholder3");
             spliceUsedNotMaj;
-
+            downloadPdf;
         } else {
             alert('Please Refresh To Pull Again');
         };
@@ -1168,12 +1176,16 @@ const eventFunction = function () {
             // Placeholder3
             htmlToAppend2(".placeholder3");
             spliceUsedMaj; 
-
+            downloadPdf
         } else {
             alert('Please Reset To Pull Again');
         };
     };
 };
+
+
+
+
 // 🌎 END GLOBAL SCOPE •••
 
 
@@ -1201,7 +1213,6 @@ $('.deck7').on('click', function () {
         console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ✔
         console.log("11. tarotCardSuite: ", tarotCardSuite);
         console.log('12. tarotCard the Array: ', tarotCard);
-        console.log('13. usedCards array: ', usedCards);
 
 });
 
@@ -1241,7 +1252,15 @@ alert('Press "i" for instructions, or click the icon!');// ✔
 // •• ✨ ANIMATION EFFECTS ** STRETCH GOALS
 
 // SHUFFLE
-
+// source: https://www.hungred.com/how-to/tutorial-shuffle-effect-jquery/
+$(function () {
+    let s = 0;
+    $('.card').on('click', function () {
+        $(this)
+            .animate({left: '15%;'}, "slow", "easeOutBack", function () { s--; $(this).css('z-index', s) })
+            .animate({left: '38%'}, "slow", "easeOutBack");
+    });
+});
 
 
 
