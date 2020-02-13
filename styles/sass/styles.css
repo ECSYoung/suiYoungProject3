@@ -658,7 +658,7 @@ label[for="toggle2"] {
   background: #f6f6f6;
   border-radius: 25px;
   padding: 1%;
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 
@@ -735,18 +735,13 @@ label[for="toggle2"] {
           transform: rotate(25deg);
 }
 
-.deck7:hover ~ .deck {
+.deck7:hover {
   -webkit-box-shadow: 5px 5px 15px white, -5px -5px 15px white;
           box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
 
-.deck6:hover ~ .deck {
-  -webkit-box-shadow: 5px 5px 15px white, -5px -5px 15px white;
-          box-shadow: 5px 5px 15px white, -5px -5px 15px white;
-}
-
-.deck:active,
-.deck:focus {
+.deck7:active,
+.deck7:focus {
   -webkit-box-shadow: inset 5px 5px 15px black, inset -5px -5px 15px black;
           box-shadow: inset 5px 5px 15px black, inset -5px -5px 15px black;
 }
@@ -780,7 +775,7 @@ label[for="toggle2"] {
 .textReading {
   width: 100%;
   background: #f6f6f680;
-  height: 60vh;
+  height: 51.5vh;
   border-radius: 50px 50px 0 0;
   margin: 0rem auto;
   -ms-grid-row: 2;
@@ -795,6 +790,8 @@ label[for="toggle2"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  top: -5.5%;
 }
 
 .readSpace {
@@ -804,7 +801,7 @@ label[for="toggle2"] {
   width: 95%;
   margin: 0 auto;
   padding: 1%;
-  border-radius: 25px;
+  border-radius: 25px 25px 0 0;
   overflow: auto;
 }
 
@@ -832,11 +829,5 @@ textarea {
   bottom: 0;
   width: 100vw;
   z-index: 1;
-}
-
-.footerSocial:hover {
-  right: -47%;
-  -webkit-transition: bottom 1s ease-in-out;
-  transition: bottom 1s ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */

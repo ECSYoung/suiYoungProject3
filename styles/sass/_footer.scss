@@ -14,13 +14,3 @@
     z-index: 1;
 }
 
-
-
-
-
-
-// on responsive, remove hover, and restore bottom to 0.
-.footerSocial:hover {
-    right:-47%;
-    transition: bottom 1s ease-in-out;
-}

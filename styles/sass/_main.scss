@@ -43,7 +43,7 @@ label[for="toggle2"] {
     background: #f6f6f6;
     border-radius: 25px;
     padding: 1%;
-    z-index: 1;
+    z-index: 2;
     display:none;
 }
 
@@ -112,16 +112,12 @@ label[for="toggle2"] {
     transform: rotate(25deg);
 }
 
-.deck7:hover~.deck {
+.deck7:hover {
     box-shadow: 5px 5px 15px white, -5px -5px 15px white;
 }
 
-.deck6:hover~.deck {
-    box-shadow: 5px 5px 15px white, -5px -5px 15px white;
-}
-
-.deck:active,
-.deck:focus {
+.deck7:active,
+.deck7:focus {
     box-shadow: inset 5px 5px 15px rgb(0, 0, 0), inset -5px -5px 15px rgb(0, 0, 0);
 }
 
@@ -154,13 +150,15 @@ label[for="toggle2"] {
 .textReading {
     width: 100%;
     background: #f6f6f680;
-    height: 60vh;
+    height: 51.5vh;
     border-radius: 50px 50px 0 0;
     margin: 0rem auto;
     grid-area: 2 / span 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    top: -5.5%;
 }
 
 .readSpace {
@@ -170,7 +168,7 @@ label[for="toggle2"] {
     width: 95%;
     margin: 0 auto;
     padding: 1%;
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
     overflow: auto;
 }
 
