@@ -1222,5 +1222,5 @@ $(window).keydown(function (e) {
     };
 });
 
-
+alert('Press "i" for instructions, or click the icon!');
 // 🏡 LOCAL SCOPE END •••
