@@ -130,7 +130,6 @@
 .cardFront:active,
 .cardFront:focus {
     transform: scale(200%);
-    z-index: 1;
     transition: all 1s ease-in-out;
 }
 

@@ -728,7 +728,6 @@ canvas {
 .cardFront:focus {
   -webkit-transform: scale(200%);
           transform: scale(200%);
-  z-index: 1;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
