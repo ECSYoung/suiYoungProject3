@@ -94,7 +94,7 @@
 .deck {
     position: relative;
     right: -16%;
-    top: 4%;
+    top: 15%;
     width: 100%; //175px;
     height: 100%; //270px;
     border: 2px dashed rgb(255, 184, 29);
@@ -143,9 +143,9 @@
 .textReading {
     width: 100%;
     background: #f6f6f680;
-    height: calc(75vh - 20vw);
+    height: calc(85vh - 20vw);
     border-radius: 50px;
-    margin: 0rem auto;
+    margin: 2rem auto;
     grid-area: 2 / span 4;
     display: flex;
     flex-direction: column;
