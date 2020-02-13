@@ -898,10 +898,10 @@ $(window).keydown(function (e) {
     e.preventDefault();
     if (e.which === 38) {
 
-        $('.readSpace').scrollTop(-300);
+        $('.readSpace').scrollTop(-5000);
     };
     if (e.which === 40) {
-        $('.readSpace').scrollTop(300);
+        $('.readSpace').scrollTop(5000);
     }
     if (e.which === 82) {
         location.reload();
