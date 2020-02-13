@@ -6,13 +6,14 @@
 // 🌎 GLOBAL SCOPE •••
 //button to empty inputs:
 $('.buttonStyle').on('click', function () {
-    location.reload();
+    location.reload(true);
 });
 
 // declare global variables 
 let suiteIndex;
 let findSuite;
 let majArcana;
+let tarotSuiteIndex;
 let tarotCardSuite;
 let counter = 0;
 
@@ -102,7 +103,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 6
+        {//array index: 5
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/5.jpg" alt="The Hierophant">`,
             title: `<h4 class="pBreak">The Hierophant</h4>`,
             generalMeaning: `
@@ -117,7 +118,7 @@ tarotCard = {
             <span class="pBreak">Earn respect and recognition by completing your education and broadening your experience. If you already have all the necessary experience you need, then rewrite your resume so others can appreciate who you are and what you can bring to a situation. Focus on your goal and be determined. You may be destined to be a master in your realm.</span>
             </p>`
         },
-        {//array index: 7
+        {//array index: 6
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/6.jpg" alt="The Lovers">`,
             title: `<h4 class="pBreak">The Lovers</h4>`,
             generalMeaning: `
@@ -134,7 +135,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 8
+        {//array index: 7
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/7.jpg" alt="The Chariot">`,
             title: `<h4 class="pBreak">The Chariot</h4>`,
             generalMeaning: `
@@ -150,7 +151,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 9
+        {//array index: 8
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/8.jpg" alt="The Strength">`,
             title: `<h4 class="pBreak">The Strength</h4>`,
             generalMeaning: `
@@ -166,7 +167,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 10
+        {//array index: 9
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/9.jpg" alt="The Hermit">`,
             title: `<h4 class="pBreak">The Hermit</h4>`,
             generalMeaning: `
@@ -183,7 +184,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 11
+        {//array index: 10
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/10.jpg" alt="The World">`,
             title: `<h4 class="pBreak">The World</h4>`,
             generalMeaning: `
@@ -199,7 +200,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 12
+        {//array index: 11
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/11.jpg" alt="The Justice">`,
             title: `<h4 class="pBreak">The Justice</h4>`,
             generalMeaning: `
@@ -215,7 +216,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 13
+        {//array index: 12
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/12.jpg" alt="The Hanged Man">`,
             title: `<h4 class="pBreak">The Hanged Man</h4>`,
             generalMeaning: `
@@ -231,7 +232,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 14
+        {//array index: 13
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/13.jpg" alt="Death">`,
             title: `<h4 class="pBreak">Death</h4>`,
             generalMeaning: `
@@ -247,7 +248,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 15
+        {//array index: 14
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/14.jpg" alt="Temperance">`,
             title: `<h4 class="pBreak">Temperance</h4>`,
             generalMeaning: `
@@ -263,7 +264,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 16
+        {//array index: 15
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/15.jpg" alt="The Devil">`,
             title: `<h4 class="pBreak">The Devil</h4>`,
             generalMeaning: `
@@ -278,7 +279,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 17
+        {//array index: 16
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/16.jpg" alt="The Tower">`,
             title: `<h4 class="pBreak">The Tower</h4>`,
             generalMeaning: `
@@ -294,7 +295,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 18
+        {//array index: 17
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/17.jpg" alt="The Star">`,
             title: `<h4 class="pBreak">The Star</h4>`,
             generalMeaning: `
@@ -310,7 +311,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 19
+        {//array index: 18
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/18.jpg" alt="The Moon">`,
             title: `<h4 class="pBreak">The Moon</h4>`,
             generalMeaning: `
@@ -324,7 +325,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 20
+        {//array index: 19
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/19.jpg" alt="The Sun">`,
             title: `<h4 class="pBreak">The Sun</h4>`,
             generalMeaning: `
@@ -338,7 +339,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 21
+        {//array index: 20
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/20.jpg" alt="Judgement">`,
             title: `<h4 class="pBreak">Judgement</h4>`,
             generalMeaning: `
@@ -355,7 +356,7 @@ tarotCard = {
             
             </p>`
         },
-        {//array index: 22
+        {//array index: 21
             card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/21.jpg" alt="The World">`,
             title: `<h4 class="pBreak">The World</h4>`,
             generalMeaning: `
@@ -1461,12 +1462,11 @@ suites = [
 ]// end of card arrays
 
 // first random number generator to start the process. // ✔
-let num = Math.round(Math.random() * 35) + 1;
+let num = Math.round(Math.random() * 35);
 
 // function that ill provide a randomNumber // ✔
 function getRandom(arrayLength) {
     return Math.floor(Math.random() * arrayLength);
-    ;
 }
 
 
@@ -1477,6 +1477,7 @@ const eventFunction = function () {
     //for major arcana and card number.
     // •• SET UP: random number generator for cards 1 - 13 + 22 major arcana.
     let num = Math.round(Math.random() * 35) + 1; // ✔
+
     suiteIndex = getRandom(suites.length); // gives # for [#] within suite array
     //return Int value for suit index = 0-3 ✔
 
@@ -1485,13 +1486,13 @@ const eventFunction = function () {
 
 
 
-    // •• DECLARE: suite variables. // ✔
+    // •• DECLARE: suite variables function. // ✔
     findSuite = suites[suiteIndex];  // variable to hold suite of card when not a major arcana = "wands, cups, swords, pentacles" ✔
 
     tarotCardSuite = tarotCard[findSuite]; // variable to hold non-major arcana suites within main array. ✔
 
     tarotSuiteIndex = getRandom(tarotCardSuite.length);
-    // console.log(tarotSuiteIndex); //✔
+    console.log('tarotsuiteIndex', tarotSuiteIndex); //✔
 
 
     // •• SET UP: click counter  ✔    
@@ -1521,8 +1522,12 @@ const eventFunction = function () {
     };
 
     // •• SET UP:  variables to splice used cards.❌❗❗❗
-    let spliceUsedMaj = tarotCard.majorArcana.splice(tarotCard.majorArcana[majArcana], 1);
-    let spliceUsedNotMaj = tarotCardSuite.splice(tarotCardSuite[tarotSuiteIndex], 1);
+    let spliceUsedMaj = function(){
+        tarotCard.majorArcana.splice(tarotCard.majorArcana[majArcana], 1)
+    };
+    let spliceUsedNotMaj = function() {
+        tarotCardSuite.splice(tarotCardSuite[tarotSuiteIndex], 1);
+    };
 
     // •• SET UP: Download button; only on 3rd click to appear under appended text ❌
     // source: https://forum.jquery.com/topic/how-to-convert-html-div-to-pdf-format-in-jquery
@@ -1551,20 +1556,20 @@ const eventFunction = function () {
             //Placeholder1
             htmlToAppend(".placeholder1");
             // splice card to usedCard array
-            spliceUsedNotMaj;
+            spliceUsedNotMaj();
 
         } else if (counter === 2 && num < 14) {
 
             // Placeholder 2
             htmlToAppend(".placeholder2");
-            spliceUsedNotMaj;
+            spliceUsedNotMaj();
 
         } else if (counter === 3 && num < 14) {
 
             //Placeholder 3
             htmlToAppend(".placeholder3");
-            spliceUsedNotMaj;
-            downloadPdf;
+            spliceUsedNotMaj();
+            // downloadPdf;
         } else {
             alert('Please Refresh To Pull Again');
         };
@@ -1575,20 +1580,20 @@ const eventFunction = function () {
 
             // Placeholder1
             htmlToAppend2(".placeholder1");
-            spliceUsedMaj;
+            spliceUsedMaj();
 
         } else if (counter === 2 && num >= 14) {
 
             // Placeholder2
             htmlToAppend2(".placeholder2");
-            spliceUsedMaj;
+            spliceUsedMaj();
 
         } else if (counter === 3 && num >= 14) {
 
             // Placeholder3
             htmlToAppend2(".placeholder3");
-            spliceUsedMaj; 
-            downloadPdf
+            spliceUsedMaj(); 
+            // downloadPdf
         } else {
             alert('Please Reset To Pull Again');
         };
@@ -1634,6 +1639,23 @@ $(document).keydown(function (e) {
     if (e.which === 32) {
         // logic for enter key}
         eventFunction();
+
+        // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
+        // •• console log to check strings
+        console.log('Testing of variables:');
+        console.log('1. num result:', num);
+        console.log("2. counter", counter);
+        console.log('3. majArcana:', majArcana);
+        console.log('4. suiteIndex: ', suiteIndex); // ✔
+        console.log('5. findSuite: ', findSuite); // ✔
+        console.log('6. majorArcana:', tarotCard.majorArcana);
+        console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card); // ✔
+        console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
+        console.log(`9. non maj arcana (tarotCardSuite[tarotSuiteIndex)]): ${tarotCardSuite[tarotSuiteIndex]}`); // ✔
+        console.log(`10. maj arcana (tarotCard.majorArcana[majArcana]): ${tarotCard.majorArcana[majArcana]}`); // ✔
+        console.log("11. tarotCardSuite: ", tarotCardSuite);
+        console.log('12. tarotCard the Array: ', tarotCard);
+
     };
     if (e.which === 73) {
         $('.instruction').fadeToggle();
