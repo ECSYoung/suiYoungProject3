@@ -642,25 +642,24 @@ label[for="toggle2"] {
   z-index: 13;
 }
 
-input[name="toggle2"] {
-  display: none;
-}
-
-input[name="toggle2"]:checked + .instruction {
-  right: 20px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+.instructionButton i {
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+  top: 1%;
+  right: 1%;
 }
 
 .instruction {
   position: absolute;
-  right: -500px;
-  top: 5.75rem;
+  right: 10px;
+  top: 7rem;
   color: black;
   background: #f6f6f6;
   border-radius: 25px;
   padding: 1%;
   z-index: 1;
+  display: none;
 }
 
 .blackDiv {

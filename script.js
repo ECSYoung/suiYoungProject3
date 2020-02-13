@@ -923,7 +923,7 @@ const eventFunction = function() {
 
     });
 
-    //  •• on key press (space)
+    //  •• on key press (space & i)
 $(document).keydown(function(e){
     e.preventDefault();
         if (e.which === 32) { 
@@ -931,11 +931,16 @@ $(document).keydown(function(e){
             eventFunction();
         };
         if (e.which === 73) {
-            $('input[name="toggle2"]:checked').click();
+            $('.instruction').fadeToggle();
         }
+    });
+
+$('.instructionButton').on('click', function(){
+    $('.instruction').fadeToggle();
+
 });
 
-//  •• on key press (space)
+//  •• on key press (up and down)
 $(window).keydown(function (e) {
     e.preventDefault();
     if (e.which === 38) {
