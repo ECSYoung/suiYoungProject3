@@ -334,6 +334,50 @@ h3 {
   }
 }
 
+h4 {
+  font-size: calc(1.8rem + 1.2 * ((100vw - 360px) / 920));
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  line-height: 4rem;
+  color: black;
+}
+
+@media screen and (max-width: 360px) {
+  h4 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h4 {
+    font-size: 3rem;
+  }
+}
+
+h5 {
+  font-size: calc(1.5rem + 0.5 * ((100vw - 360px) / 920));
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  line-height: 4rem;
+  color: black;
+}
+
+@media screen and (max-width: 360px) {
+  h5 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h5 {
+    font-size: 2rem;
+  }
+}
+
 p {
   font-family: 'Cabin', sans-serif;
   font-size: calc(1.5rem + 1 * ((100vw - 360px) / 920));

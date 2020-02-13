@@ -65,6 +65,26 @@ h3 {
     color: black;
 }
 
+h4 {
+    @include fluid-type (1.8rem, 3rem, 360px, 1280px);
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    line-height: 4rem;
+    color: black;
+}
+
+h5 {
+    @include fluid-type (1.5rem, 2rem, 360px, 1280px);
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    line-height: 4rem;
+    color: black;
+}
+
 p { 
     font-family: 'Cabin', sans-serif;
     @include fluid-type (1.5rem, 2.5rem, 360px, 1280px);
