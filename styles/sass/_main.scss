@@ -5,27 +5,15 @@
     margin-left: 1%;
 }
 
-// instruction toggle:
-label[for="toggle2"] {
-    position: absolute;
-    top: -1vh;
-    right: 2rem;
-    font-size: 5rem;
-    color: #fafafa;
-    margin: 1rem;
-    display: block;
-    z-index: 13;
+.logo {
+    width: 5vw;
 }
 
-// input[name="toggle2"] {
-//     display: none;
-// }
-
-// input[name="toggle2"]:checked+.instruction {
-//     right: 20px;
-//     transition: 0.5s ease-in-out;
-// }
-
+.logo:hover {
+    transform: scale(250%);
+    margin-top: 5rem;
+    transition: all 1s ease-in-out;
+}
 
 .instructionButton i {
     font-size: 5rem;
@@ -44,7 +32,7 @@ label[for="toggle2"] {
     border-radius: 25px;
     padding: 1%;
     z-index: 2;
-    display:none;
+    display: none;
 }
 
 
@@ -135,7 +123,8 @@ label[for="toggle2"] {
     top: -100%;
 }
 
-.cardFront:hover, .cardFront:active {
+.cardFront:hover,
+.cardFront:active {
     transform: scale(200%);
     z-index: 1;
     transition: all 1s ease-in-out;

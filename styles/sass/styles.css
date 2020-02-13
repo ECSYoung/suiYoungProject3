@@ -631,15 +631,16 @@ canvas {
   margin-left: 1%;
 }
 
-label[for="toggle2"] {
-  position: absolute;
-  top: -1vh;
-  right: 2rem;
-  font-size: 5rem;
-  color: #fafafa;
-  margin: 1rem;
-  display: block;
-  z-index: 13;
+.logo {
+  width: 5vw;
+}
+
+.logo:hover {
+  -webkit-transform: scale(250%);
+          transform: scale(250%);
+  margin-top: 5rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .instructionButton i {
@@ -759,7 +760,8 @@ label[for="toggle2"] {
   top: -100%;
 }
 
-.cardFront:hover, .cardFront:active {
+.cardFront:hover,
+.cardFront:active {
   -webkit-transform: scale(200%);
           transform: scale(200%);
   z-index: 1;

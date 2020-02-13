@@ -775,7 +775,7 @@ tarotCard = {
             </p>`
         },
         {//array index: 8
-            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/44.jpg" alt="9 of Cups"`,
+            card: `<img class = "cardFront" src="./Assets/Cards/wingedSpirit/44.jpg" alt="9 of Cups">`,
             title: `<h4 class="pBreak">Nine of Cups</h4>`,
             generalMeaning: `
             <h5>General Meaning:</h5>
@@ -1048,9 +1048,13 @@ suites = [
     'pentacles' //3
 ]// end of card arrays
 
+// make an array for the used cards to append to once drawn 1x // ✔
+usedCards = [];
+
+// first random number generator to start the process. // ✔
 let num = Math.round(Math.random() * 35) + 1;
 
-// function that ill provide a randomNumber
+// function that ill provide a randomNumber // ✔
 function getRandom(arrayLength) {
     return Math.floor(Math.random() * arrayLength);
     ;
@@ -1063,7 +1067,7 @@ function getRandom(arrayLength) {
 const eventFunction = function () {
     //for major arcana and card number.
     // •• SET UP: random number generator for cards 1 - 13 + 22 major arcana.
-    let num = Math.round(Math.random() * 35) + 1;
+    let num = Math.round(Math.random() * 35) + 1; // ✔
     suiteIndex = getRandom(suites.length); // gives # for [#] within suite array
     //return Int value for suit index = 0-3 ✔
 
@@ -1072,7 +1076,7 @@ const eventFunction = function () {
 
 
 
-    // •• DECLARE: suite variables.
+    // •• DECLARE: suite variables. // ✔
     findSuite = suites[suiteIndex];  // variable to hold suite of card when not a major arcana = "wands, cups, swords, pentacles" ✔
 
     tarotCardSuite = tarotCard[findSuite]; // variable to hold non-major arcana suites within main array. ✔
@@ -1085,7 +1089,7 @@ const eventFunction = function () {
     counter++;
 
     // •• SET UP: function to append data from cards ✔
-    // for major arcana
+    // for major arcana // ✔
     const htmlToAppend2 = function (placeholderSpot) {
         // in placeholder
         $(placeholderSpot).append(`${tarotCard.majorArcana[majArcana].card}`);
@@ -1098,7 +1102,7 @@ const eventFunction = function () {
         $(".readSpace").append(`${tarotCard.majorArcana[majArcana].advice}`);
     };
 
-    // for non major arcana
+    // for non major arcana// ✔
     const htmlToAppend = function (placeholderSpot2) {
         // in placeholder
         $(placeholderSpot2).append(`${tarotCardSuite[tarotSuiteIndex].card}`);
@@ -1111,6 +1115,10 @@ const eventFunction = function () {
         $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].advice}`);
     };
 
+    // •• SET UP:  variables to splice used cards.
+    let spliceUsedMaj = usedCards.splice(tarotCard.majorArcana[majArcana], 1);
+    let spliceUsedNotMaj = usedCards.splice(tarotCardSuite[tarotSuiteIndex], 1);
+
 
 
 
@@ -1122,16 +1130,20 @@ const eventFunction = function () {
 
             //Placeholder1
             htmlToAppend(".placeholder1");
+            // splice card to usedCard array
+            spliceUsedNotMaj;
 
         } else if (counter === 2 && num < 14) {
 
             // Placeholder 2
             htmlToAppend(".placeholder2");
+            spliceUsedNotMaj;
 
         } else if (counter === 3 && num < 14) {
 
             //Placeholder 3
             htmlToAppend(".placeholder3");
+            spliceUsedNotMaj;
 
         } else {
             alert('Please Refresh To Pull Again');
@@ -1143,16 +1155,19 @@ const eventFunction = function () {
 
             // Placeholder1
             htmlToAppend2(".placeholder1");
+            spliceUsedMaj;
 
         } else if (counter === 2 && num > 14) {
 
             // Placeholder2
             htmlToAppend2(".placeholder2");
+            spliceUsedMaj;
 
         } else if (counter === 3 && num > 14) {
 
             // Placeholder3
             htmlToAppend2(".placeholder3");
+            spliceUsedMaj; 
 
         } else {
             alert('Please Reset To Pull Again');
@@ -1167,31 +1182,30 @@ const eventFunction = function () {
 // •• 🧠 LOGIC: if num returns a value under 14, search in the suite array for the suite. Use the returned suite value to find the array in 'tarotCard' object.
 // Use a variable assigned to RNG and use RNG as index for random search within suite array for a card number, and return value in console log/append to read panel.
 
-// •• on mouse click:
+// •• on mouse click: // ✔
 $('.deck7').on('click', function () {
     eventFunction();
 
     // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
     // •• console log to check strings
-    console.log('Testing of variables:');
-    console.log('1. num result:', num);
-    console.log("2. counter", counter);
-    console.log('3. majArcana:', majArcana);
-    console.log('4. suiteIndex: ', suiteIndex); // ✔
-    console.log('5. findSuite: ', findSuite); // ✔
-    console.log('6. majorArcana:', tarotCard.majorArcana);
-    console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card); // ✔
-    console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
-    console.log(`9. non maj arcana: ${tarotCardSuite[tarotSuiteIndex].card}`); // ✔
-    console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ✔
-    console.log("11. tarotCardSuite: ", tarotCardSuite);
-    console.log("12. tarotCard the Array: ", tarotCard);
-
-    //end check
+        console.log('Testing of variables:');
+        console.log('1. num result:', num);
+        console.log("2. counter", counter);
+        console.log('3. majArcana:', majArcana);
+        console.log('4. suiteIndex: ', suiteIndex); // ✔
+        console.log('5. findSuite: ', findSuite); // ✔
+        console.log('6. majorArcana:', tarotCard.majorArcana);
+        console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card); // ✔
+        console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
+        console.log(`9. non maj arcana: ${tarotCardSuite[tarotSuiteIndex].card}`); // ✔
+        console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ✔
+        console.log("11. tarotCardSuite: ", tarotCardSuite);
+        console.log('12. tarotCard the Array: ', tarotCard);
+        console.log('13. usedCards array: ', usedCards);
 
 });
 
-//  •• on key press (space & i)
+//  •• on key press (space & i)// ✔
 $(document).keydown(function (e) {
     e.preventDefault();
     if (e.which === 32) {
@@ -1207,7 +1221,7 @@ $('.instructionButton').on('click', function () {
     $('.instruction').fadeToggle();
 });
 
-//  •• on key press (up and down)
+//  •• on key press (up and down)// ✔
 $(window).keydown(function (e) {
     e.preventDefault();
     if (e.which === 38) {
@@ -1222,5 +1236,13 @@ $(window).keydown(function (e) {
     };
 });
 
-alert('Press "i" for instructions, or click the icon!');
+alert('Press "i" for instructions, or click the icon!');// ✔
+
+// •• ✨ ANIMATION EFFECTS ** STRETCH GOALS
+
+// SHUFFLE
+
+
+
+
 // 🏡 LOCAL SCOPE END •••
