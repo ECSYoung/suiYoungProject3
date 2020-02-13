@@ -313,24 +313,6 @@ h2 {
 }
 
 h3 {
-  font-size: calc(0.25rem + 0.75 * ((100vw - 360px) / 920));
-  display: inline;
-  color: #171717;
-}
-
-@media screen and (max-width: 360px) {
-  h3 {
-    font-size: 0.25rem;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  h3 {
-    font-size: 1rem;
-  }
-}
-
-h4 {
   font-size: calc(1.8rem + 1.2 * ((100vw - 360px) / 920));
   margin: 0;
   padding: 0;
@@ -341,36 +323,14 @@ h4 {
 }
 
 @media screen and (max-width: 360px) {
-  h4 {
+  h3 {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  h4 {
+  h3 {
     font-size: 3rem;
-  }
-}
-
-h5 {
-  font-size: calc(1.5rem + 0.5 * ((100vw - 360px) / 920));
-  margin: 0;
-  padding: 0;
-  display: block;
-  width: 100%;
-  line-height: 4rem;
-  color: black;
-}
-
-@media screen and (max-width: 360px) {
-  h5 {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  h5 {
-    font-size: 2rem;
   }
 }
 
@@ -412,6 +372,8 @@ i:hover {
 
 a {
   padding: 10px;
+  color: black;
+  text-shadow: #8eb7f5;
 }
 
 img {
@@ -432,15 +394,6 @@ img {
   text-transform: uppercase;
   margin: 10px 5px 5px;
   border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (max-width: 360px) {
@@ -538,12 +491,13 @@ canvas {
 }
 
 .cardDeck {
+  position: relative;
+  top: 0%;
+  right: 3%;
   min-width: 6rem;
   min-height: 10rem;
-  width: 80%;
+  width: 85%;
   margin: auto;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: 1 / 4;
@@ -667,10 +621,11 @@ canvas {
   display: flex;
   width: 50vw;
   height: 15vw;
-  margin: 1% auto;
+  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
 }
 
 .placeholder1,
@@ -742,7 +697,7 @@ canvas {
 .textReading {
   width: 100%;
   background: #f6f6f680;
-  height: 51.5vh;
+  height: calc(75vh - 20vw);
   border-radius: 50px;
   margin: 0rem auto;
   -ms-grid-row: 2;
@@ -764,7 +719,7 @@ canvas {
 .readSpace {
   background: white;
   display: block;
-  height: 85%;
+  height: 80%;
   width: 95%;
   margin: 0 auto;
   padding: 2%;

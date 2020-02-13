@@ -17,13 +17,13 @@
     <title>Juno • Tarot</title>
 </head>
 <body>
-    <!-- no header, just a landing page -->
+
     
     <main>
         <!-- particles.js container -->
         <div id="particles-js"></div>
         
-        <bu class = "wrapper mainBody">
+        <div class = "wrapper mainBody">
             <div class="headerTextNButton">
                 <h1>JunoTarot</h1>
 
@@ -32,25 +32,20 @@
                 </div>
         
                 <!-- buttons -->
-                <div class="buttonStyle" tabindex="0">Reset</div>
+                <button class="buttonStyle" tabindex="0">Reset</button>
                 <!-- <button class="buttonStyle2" type="submit">Download</button> -->
             </div>
             
 
             <!-- toggle for instructions -->
-            <button class="instructionButton"><i class="fas fa-info-circle"></i></button>
+            <button class="instructionButton" tabindex="0"><i class="fas fa-info-circle"></i></button>
             
             <div class="instruction">
-                <h3 class="instrHeading">
-                    <ul>
-                        <li>[space] = deal</li>
-                        <li>[↑] / [↓] = scroll</li>
-                        <li>r = refresh</li>
-                    </ul>
-                </h3>
-                <h4>Winged Spirit Tarot</h4>
+                <h3 class="instrHeading">Winged Spirit Tarot</h3>
                 <p>
-                <span class="pBreak">Winged Spirit Tarot portrays the beauty and mystery of angels and other winged spirits, based on the timeless concept that angels are a bridge between the known and the unknown.</span>
+                <span aria-describedby= "" class="pBreak">Winged Spirit Tarot portrays the beauty and mystery of angels and
+                    other winged spirits, based on the timeless concept that angels are a bridge between the known and
+                    the unknown.</span>
                 <span class="pBreak">Images and text for the tarot deck are owned and copyrighted by David Sexton & Tarot.com</span>
                 <span class = "pBreak">To see more: <a href= "https://www.tarot.com/tarot/decks/winged-spirit" target="_blank">Click here</a></span></p>
             </div>
@@ -98,10 +93,10 @@
                                 <img src="./Assets/Cards/wingedSpirit/backofcard.jpg"
                                     alt="image of the glyph illustration on the back of the tarot deck.">
                             </div>
-                            <div class="deck7" tabindex="0">
+                            <button class="deck7" tabindex="0">
                                 <img class="deck7Img" src="./Assets/Cards/wingedSpirit/backofcard.jpg"
                                     alt="image of the glyph illustration on the back of the tarot deck.">
-                            </div>
+                            </button>
                         </div>
                     </div>
 
@@ -111,11 +106,10 @@
                             <h2 class="readingHeading">Here's Your Reading </h2>
                         </div>
 
-                        <div class="readSpace">
+                        <!-- <textarea class="readSpace" rows=100 cols=90% placeholder="This is where your reading will
+                            appear"></textarea> -->
+                        <div class="readSpace" tabindex="0">
                             <p class="read"> This is where your reading will appear.</p>
-
-                            
-                            
                         </div>
 
                     </div>

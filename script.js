@@ -1459,7 +1459,10 @@ suites = [
     'cups', //1
     'swords', //2
     'pentacles' //3
-]// end of card arrays
+]
+
+usedCards =[];
+// end of card arrays
 
 // first random number generator to start the process. // ✔
 let num = Math.round(Math.random() * 35);
@@ -1525,23 +1528,9 @@ const eventFunction = function () {
     let spliceUsedMaj = function(){
         tarotCard.majorArcana.splice(tarotCard.majorArcana[majArcana], 1)
     };
+    
     let spliceUsedNotMaj = function() {
         tarotCardSuite.splice(tarotCardSuite[tarotSuiteIndex], 1);
-    };
-
-    // •• SET UP: Download button; only on 3rd click to appear under appended text ❌
-    // source: https://forum.jquery.com/topic/how-to-convert-html-div-to-pdf-format-in-jquery
-    const downloadPdf = function (){
-        $(".readSpace").append(`<button id="download">Download As Pdf</button>`);
-        $('#download').on('click', function(){
-            let doc = new jsPDF();
-            doc.append($('.readSpace'), 15, 15, {
-                'background': '#FFFFFF',
-                'border':'2px solid white',
-                }, function(){
-                    doc.save('myReading.pdf');
-                });
-        });
     };
 
 
@@ -1601,8 +1590,6 @@ const eventFunction = function () {
 };
 
 
-
-
 // 🌎 END GLOBAL SCOPE •••
 
 
@@ -1633,68 +1620,11 @@ $('.deck7').on('click', function () {
 
 });
 
-//  •• on key press (space & i)// ✔
-$(document).keydown(function (e) {
-    e.preventDefault();
-    if (e.which === 32) {
-        // logic for enter key}
-        eventFunction();
-
-        // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
-        // •• console log to check strings
-        console.log('Testing of variables:');
-        console.log('1. num result:', num);
-        console.log("2. counter", counter);
-        console.log('3. majArcana:', majArcana);
-        console.log('4. suiteIndex: ', suiteIndex); // ✔
-        console.log('5. findSuite: ', findSuite); // ✔
-        console.log('6. majorArcana:', tarotCard.majorArcana);
-        console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card); // ✔
-        console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
-        console.log(`9. non maj arcana (tarotCardSuite[tarotSuiteIndex)]): ${tarotCardSuite[tarotSuiteIndex]}`); // ✔
-        console.log(`10. maj arcana (tarotCard.majorArcana[majArcana]): ${tarotCard.majorArcana[majArcana]}`); // ✔
-        console.log("11. tarotCardSuite: ", tarotCardSuite);
-        console.log('12. tarotCard the Array: ', tarotCard);
-
-    };
-    if (e.which === 73) {
-        $('.instruction').fadeToggle();
-    }
-});
-
 $('.instructionButton').on('click', function () {
     $('.instruction').fadeToggle();
 });
 
-//  •• on key press (up and down)// ✔
-$(window).keydown(function (e) {
-    e.preventDefault();
-    if (e.which === 38) {
-
-        $('.readSpace').scrollTop(-5000);
-    };
-    if (e.which === 40) {
-        $('.readSpace').scrollTop(5000);
-    }
-    if (e.which === 82) {
-        location.reload();
-    };
-});
-
 alert('Press "i" for instructions, or click the icon!');// ✔
-
-// •• ✨ ANIMATION EFFECTS ** STRETCH GOALS
-
-// SHUFFLE
-// source: https://www.hungred.com/how-to/tutorial-shuffle-effect-jquery/
-$(function () {
-    let s = 0;
-    $('.card').on('click', function () {
-        $(this)
-            .animate({left: '15%;'}, "slow", "easeOutBack", function () { s--; $(this).css('z-index', s) })
-            .animate({left: '38%'}, "slow", "easeOutBack");
-    });
-});
 
 
 

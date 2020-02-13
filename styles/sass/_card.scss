@@ -1,9 +1,12 @@
 .cardDeck {
+    position: relative;
+    top: 0%;
+    right: 3%;
     min-width: 6rem;
     min-height: 10rem;
-    width: 80%; //175px;
+    width: 85%; //175px;
     margin: auto;
-    transform: rotate(25deg);
+    // transform: rotate(25deg);
     grid-area: 1 / 4;
     z-index: 2;
 }

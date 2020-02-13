@@ -71,8 +71,9 @@
     display: flex;
     width: 50vw;
     height: 15vw;
-    margin: 1% auto;
+    margin: auto;
     justify-content: center;
+    z-index: 1;
 }
 
 // style the placeholders and the deck
@@ -142,7 +143,7 @@
 .textReading {
     width: 100%;
     background: #f6f6f680;
-    height: 51.5vh;
+    height: calc(75vh - 20vw);
     border-radius: 50px;
     margin: 0rem auto;
     grid-area: 2 / span 4;
@@ -156,7 +157,7 @@
 .readSpace {
     background: white;
     display: block;
-    height: 85%;
+    height: 80%;
     width: 95%;
     margin: 0 auto;
     padding: 2%;
