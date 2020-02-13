@@ -1085,7 +1085,7 @@ const eventFunction = function () {
     // •• SET UP: click counter  ✔    
     counter++;
 
-    // •• SET UP: function to append data from cards ✔
+    // •• SET UP: function to append data from cards ✔ ❌❗ // sometimes error?
     // for major arcana // ✔
     const htmlToAppend2 = function (placeholderSpot) {
         // in placeholder
@@ -1108,17 +1108,17 @@ const eventFunction = function () {
         $(".readSpace").append(`${tarotCardSuite[tarotSuiteIndex].advice}`);
     };
 
-    // •• SET UP:  variables to splice used cards.
+    // •• SET UP:  variables to splice used cards.❌❗❗❗
     let spliceUsedMaj = tarotCard.majorArcana.splice(tarotCard.majorArcana[majArcana], 1);
     let spliceUsedNotMaj = tarotCardSuite.splice(tarotCardSuite[tarotSuiteIndex], 1);
 
-    // •• SET UP: Download button
+    // •• SET UP: Download button; only on 3rd click to appear under appended text ❌
     // source: https://forum.jquery.com/topic/how-to-convert-html-div-to-pdf-format-in-jquery
     const downloadPdf = function (){
-        $(".readSpace").append(`<button id=download">Download As Pdf</button>`);
+        $(".readSpace").append(`<button id="download">Download As Pdf</button>`);
         $('#download').on('click', function(){
             let doc = new jsPDF();
-            doc.addHTML($('.readSpace'), 15, 15, {
+            doc.append($('.readSpace'), 15, 15, {
                 'background': '#FFFFFF',
                 'border':'2px solid white',
                 }, function(){
@@ -1159,19 +1159,19 @@ const eventFunction = function () {
 
     } else if (num > 14) { //for major arcana
 
-        if (counter === 1 && num > 14) {
+        if (counter === 1 && num >= 14) {
 
             // Placeholder1
             htmlToAppend2(".placeholder1");
             spliceUsedMaj;
 
-        } else if (counter === 2 && num > 14) {
+        } else if (counter === 2 && num >= 14) {
 
             // Placeholder2
             htmlToAppend2(".placeholder2");
             spliceUsedMaj;
 
-        } else if (counter === 3 && num > 14) {
+        } else if (counter === 3 && num >= 14) {
 
             // Placeholder3
             htmlToAppend2(".placeholder3");

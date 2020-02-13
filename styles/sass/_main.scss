@@ -45,7 +45,7 @@
     background: rgba(0, 0, 0, 0.788);
     padding: 0 5rem;
     margin-top: 1rem;
-    border-radius: 8% 8% 0 0;
+    border-radius: 8%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -125,7 +125,7 @@
 }
 
 .cardFront:hover,
-.cardFront:active {
+.cardFront:active, .cardFront:focus {
     transform: scale(200%);
     z-index: 1;
     transition: all 1s ease-in-out;
@@ -141,7 +141,7 @@
     width: 100%;
     background: #f6f6f680;
     height: 51.5vh;
-    border-radius: 50px 50px 0 0;
+    border-radius: 50px;
     margin: 0rem auto;
     grid-area: 2 / span 4;
     display: flex;
@@ -157,12 +157,7 @@
     height: 85%;
     width: 95%;
     margin: 0 auto;
-    padding: 1%;
-    border-radius: 25px 25px 0 0;
+    padding: 2%;
+    border-radius: 25px;
     overflow-y: auto;
-}
-
-textarea {
-    font-size: 1.5rem;
-    color: $blackColor;
 }

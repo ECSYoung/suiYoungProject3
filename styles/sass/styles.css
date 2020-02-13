@@ -632,7 +632,7 @@ canvas {
   background: rgba(0, 0, 0, 0.788);
   padding: 0 5rem;
   margin-top: 1rem;
-  border-radius: 8% 8% 0 0;
+  border-radius: 8%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -724,7 +724,7 @@ canvas {
 }
 
 .cardFront:hover,
-.cardFront:active {
+.cardFront:active, .cardFront:focus {
   -webkit-transform: scale(200%);
           transform: scale(200%);
   z-index: 1;
@@ -741,7 +741,7 @@ canvas {
   width: 100%;
   background: #f6f6f680;
   height: 51.5vh;
-  border-radius: 50px 50px 0 0;
+  border-radius: 50px;
   margin: 0rem auto;
   -ms-grid-row: 2;
   grid-area: 2 / span 4;
@@ -765,14 +765,9 @@ canvas {
   height: 85%;
   width: 95%;
   margin: 0 auto;
-  padding: 1%;
-  border-radius: 25px 25px 0 0;
+  padding: 2%;
+  border-radius: 25px;
   overflow-y: auto;
-}
-
-textarea {
-  font-size: 1.5rem;
-  color: #171717;
 }
 
 .footerSocial {
