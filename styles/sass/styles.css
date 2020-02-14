@@ -607,8 +607,8 @@ canvas {
   font-size: 5rem;
   color: white;
   position: absolute;
-  top: 1%;
-  right: 1%;
+  top: 2%;
+  right: 12%;
 }
 
 .instruction {
