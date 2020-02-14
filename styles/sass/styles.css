@@ -438,6 +438,8 @@ img {
   text-transform: uppercase;
   margin: 10px 5px 5px;
   border-radius: 25px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
+          box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
 }
 
 @media screen and (max-width: 360px) {
@@ -452,9 +454,9 @@ img {
   }
 }
 
-.buttonStyle:hover {
-  -webkit-box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
-          box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
+.buttonStyle:active, .buttonStyle:focus {
+  -webkit-box-shadow: inset 2px 2px 10px 0px rgba(255, 255, 255, 0.92), inset -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
+          box-shadow: inset 2px 2px 10px 0px rgba(255, 255, 255, 0.92), inset -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
 }
 
 .visually-hidden:not(:focus):not(:active) {

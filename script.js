@@ -1526,11 +1526,17 @@ const eventFunction = function () {
 
     // •• SET UP:  variables to splice used cards.❌❗❗❗
     let spliceUsedMaj = function(){
+        usedCards.push(tarotCard.majorArcana[majArcana]);
         tarotCard.majorArcana.splice(tarotCard.majorArcana[majArcana], 1)
+        console.log('used Cards Array:', usedCards);
+        console.log('old array: ', tarotCard.majorArcana)
     };
     
     let spliceUsedNotMaj = function() {
+        usedCards.push(tarotCardSuite[tarotSuiteIndex]);
         tarotCardSuite.splice(tarotCardSuite[tarotSuiteIndex], 1);
+        console.log('used Cards Array:', usedCards);
+        console.log('old array:', tarotCardSuite)
     };
 
 
@@ -1624,7 +1630,6 @@ $('.instructionButton').on('click', function () {
     $('.instruction').fadeToggle();
 });
 
-alert('Press "i" for instructions, or click the icon!');// ✔
 
 
 
