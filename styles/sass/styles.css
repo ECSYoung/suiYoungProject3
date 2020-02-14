@@ -497,7 +497,7 @@ canvas {
 .cardDeck {
   position: relative;
   top: 0%;
-  right: 3%;
+  right: 3vw;
   min-width: 6rem;
   min-height: 10rem;
   width: 85%;
@@ -564,11 +564,11 @@ canvas {
 }
 
 .instructionButton i {
-  font-size: 8vw;
+  font-size: 4rem;
   color: white;
   position: absolute;
-  top: 33%;
-  right: calc(2% + 13vw);
+  top: 1%;
+  right: 2%;
   text-shadow: 5px 5px 10px black;
   z-index: 2;
 }
