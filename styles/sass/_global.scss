@@ -94,13 +94,19 @@ p {
     line-height: 4rem;
 }
 
+
+
 li, 
 ul {
     text-decoration: none;
     list-style-type: none;
     line-height: 46px;
-    font-size: 2rem;
+    font-family: 'Cabin',
+    sans-serif;
+    @include fluid-type (1.5rem, 2.5rem, 360px, 1280px);
 }
+
+
 
 i {
     color: $whiteShadeColor;
