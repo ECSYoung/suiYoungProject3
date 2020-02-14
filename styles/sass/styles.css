@@ -456,6 +456,8 @@ img {
   border-radius: 25px;
   -webkit-box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
           box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.92), -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
+  -webkit-box-shadow: inset 2px 2px 10px 0px rgba(255, 255, 255, 0.92), inset -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
+          box-shadow: inset 2px 2px 10px 0px rgba(255, 255, 255, 0.92), inset -2px -2px 10px 0px rgba(255, 255, 255, 0.92);
 }
 
 @media screen and (max-width: 360px) {
