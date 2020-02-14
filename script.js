@@ -1461,13 +1461,14 @@ suites = [
     'pentacles' //3
 ]
 
+// this array will hold cards already drawn. Once they're appended to the place holders, they'll be pushed here, and spliced from the tarotCard object/array.
 usedCards =[];
 // end of card arrays
 
 // first random number generator to start the process. // ✔
 let num = Math.round(Math.random() * 35);
 
-// function that ill provide a randomNumber // ✔
+// function that will provide a randomNumber // ✔
 function getRandom(arrayLength) {
     return Math.floor(Math.random() * arrayLength);
 }
@@ -1495,7 +1496,6 @@ const eventFunction = function () {
     tarotCardSuite = tarotCard[findSuite]; // variable to hold non-major arcana suites within main array. ✔
 
     tarotSuiteIndex = getRandom(tarotCardSuite.length);
-    console.log('tarotsuiteIndex', tarotSuiteIndex); //✔
 
 
     // •• SET UP: click counter  ✔    
@@ -1528,15 +1528,11 @@ const eventFunction = function () {
     let spliceUsedMaj = function(){
         usedCards.push(tarotCard.majorArcana[majArcana]);
         tarotCard.majorArcana.splice(tarotCard.majorArcana[majArcana], 1)
-        console.log('used Cards Array:', usedCards);
-        console.log('old array: ', tarotCard.majorArcana)
     };
     
     let spliceUsedNotMaj = function() {
         usedCards.push(tarotCardSuite[tarotSuiteIndex]);
         tarotCardSuite.splice(tarotCardSuite[tarotSuiteIndex], 1);
-        console.log('used Cards Array:', usedCards);
-        console.log('old array:', tarotCardSuite)
     };
 
 
@@ -1607,23 +1603,6 @@ const eventFunction = function () {
 // •• on mouse click: // ✔
 $('.deck7').on('click', function () {
     eventFunction();
-
-    // 🚑 DEBUGGING CONSOLE LOG CHAIN •••
-    // •• console log to check strings
-        console.log('Testing of variables:');
-        console.log('1. num result:', num);
-        console.log("2. counter", counter);
-        console.log('3. majArcana:', majArcana);
-        console.log('4. suiteIndex: ', suiteIndex); // ✔
-        console.log('5. findSuite: ', findSuite); // ✔
-        console.log('6. majorArcana:', tarotCard.majorArcana);
-        console.log('7. major Arcana Title:', tarotCard.majorArcana[majArcana].title, tarotCard.majorArcana[majArcana].card); // ✔
-        console.log('8. findSuite[suiteIndex]:', tarotCardSuite[tarotSuiteIndex].title, tarotCardSuite[tarotSuiteIndex].card); // ✔
-        console.log(`9. non maj arcana: ${tarotCardSuite[tarotSuiteIndex].card}`); // ✔
-        console.log(`10. maj arcana: ${tarotCard.majorArcana[majArcana].card}`); // ✔
-        console.log("11. tarotCardSuite: ", tarotCardSuite);
-        console.log('12. tarotCard the Array: ', tarotCard);
-
 });
 
 $('.instructionButton').on('click', function () {
