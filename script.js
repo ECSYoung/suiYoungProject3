@@ -1538,29 +1538,38 @@ const eventFunction = function () {
 
 
 
-    // •• 📝 LOCAL APPEND WITHIN ON CLICK FUNCTION
+    // •• 📝 LOCAL APPEND WITHIN ON CLICK FUNCTION: 
+        // on click 1, append first card to placeholder 1; if num < 14, append a non-major arcana card. else append a major arcana card.
+            // push card to used card array, splice from original array/object.
+        // on click 2, append second card to placeholder 2; if num < 14, append a non-major arcana card. else append a major arcana card.
+            // push card to used card array, splice from original array/object.
+        // on click 3, append third card to placeholder 3; if num < 14, append a non-major arcana card. else append a major arcana card.
+            // push card to used card array, splice from original array/object.
+        // prompt user to reset to draw again
 
     if (num < 14) {//for non-major arcana
 
         if (counter === 1 && num < 14) {
 
-            //Placeholder1
+            // append to Placeholder1
             htmlToAppend(".placeholder1");
             // splice card to usedCard array
             spliceUsedNotMaj();
 
         } else if (counter === 2 && num < 14) {
 
-            // Placeholder 2
+            // append to Placeholder 2
             htmlToAppend(".placeholder2");
+            // splice card to usedCard array
             spliceUsedNotMaj();
 
         } else if (counter === 3 && num < 14) {
 
-            //Placeholder 3
+            // append to Placeholder 3
             htmlToAppend(".placeholder3");
+            // splice card to usedCard array
             spliceUsedNotMaj();
-            // downloadPdf;
+
         } else {
             alert('Please Refresh To Pull Again');
         };
@@ -1569,23 +1578,27 @@ const eventFunction = function () {
 
         if (counter === 1 && num >= 14) {
 
-            // Placeholder1
+            // append to Placeholder1
             htmlToAppend2(".placeholder1");
+            // splice card to usedCard array
             spliceUsedMaj();
 
         } else if (counter === 2 && num >= 14) {
 
-            // Placeholder2
+            // append to Placeholder2
             htmlToAppend2(".placeholder2");
+            // splice card to usedCard array
             spliceUsedMaj();
 
         } else if (counter === 3 && num >= 14) {
 
-            // Placeholder3
+            // append to Placeholder3
             htmlToAppend2(".placeholder3");
+            // splice card to usedCard array
             spliceUsedMaj(); 
-            // downloadPdf
+
         } else {
+            // give alert that they'll need to reset the game, or refresh in order to get a new reading.
             alert('Please Reset To Pull Again');
         };
     };

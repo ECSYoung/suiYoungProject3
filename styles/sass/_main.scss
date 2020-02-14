@@ -16,11 +16,13 @@
 }
 
 .instructionButton i {
-    font-size: 5rem;
+    font-size: 8vw;
     color: white;
     position: absolute;
-    top: 2%;
-    right: 12%;
+    top: 33%;
+    right: calc(2% + 13vw);
+    text-shadow: 5px 5px 10px black;
+    z-index: 2;
 }
 
 .instruction {
@@ -108,6 +110,10 @@
 
 .deck7:active, .deck7:focus {
     box-shadow: 10px 10px 15px white, -10px -10px 15px rgb(0, 0, 0);
+}
+
+.card {
+    box-shadow: 2px 2px grey;
 }
 
 .placeholderWhite {
