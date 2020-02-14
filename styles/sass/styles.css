@@ -600,6 +600,14 @@ canvas {
   border: 5px dashed #8eb7f5;
 }
 
+.arrow i {
+  color: #8eb7f5;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  float: right;
+  font-size: 5rem;
+}
+
 .blackDiv {
   position: relative;
   width: 100%;
