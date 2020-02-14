@@ -11,8 +11,10 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
     background: $blackColor;
+    height:95vh;
 }
 
 main {
@@ -113,7 +115,6 @@ i:hover {
 a {
     padding: 10px;
     color: black;
-    text-shadow: rgb(142, 183, 245);
 }
 
 img {
@@ -143,46 +144,6 @@ img {
 }
 
 
-// accessibility focused hiding of labels.
-.visually-hidden:not(:focus):not(:active) { 
-    position: absolute !important;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
-}
-// ^end visually-hidden code
-
-// Accessibility code for skip-link
-.skip-link {
-    position: absolute;
-    left: -999px;
-    top: 1%;
-    top: 5px;
-    z-index: 999;
-    background: white;
-    font-size: 3rem;
-    border-radius: 50px;
-    width: 15rem;
-    height: 15rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: $blackColor;
-}
-
-.skip-link a {
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 2rem;
-}
-
-.skip-link:focus {
-    left: 5%;
-}
-// ^ End skip code 
 
 .pBreak {
     display: block;
