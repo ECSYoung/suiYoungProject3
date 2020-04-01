@@ -43,14 +43,14 @@ h1, h2, h3, h4, h5, a {
 }
 
 h1 {
-    @include fluid-type (3rem, 6rem, 360px, 1280px);
+    @include fluid-type (2.5rem, 6rem, 320px, 1280px);
     margin: 0;
     line-height: 4.5rem;
     
 }
 
 h2 {
-    @include fluid-type (2rem, 3rem, 360px, 1280px);
+    @include fluid-type (2rem, 3rem, 320px, 1280px);
     margin: 0;
     line-height: 4.5rem;
     display: inline;
@@ -58,7 +58,7 @@ h2 {
 }
 
 h3 {
-    @include fluid-type (1.8rem, 3rem, 360px, 1280px);
+    @include fluid-type (1.8rem, 3rem, 320px, 1280px);
     margin: 0;
     padding: 0;
     display: block;
@@ -68,7 +68,7 @@ h3 {
 }
 
 h4 {
-    @include fluid-type (1.8rem, 3rem, 360px, 1280px);
+    @include fluid-type (1.8rem, 3rem, 320px, 1280px);
     margin: 0;
     padding: 0;
     display: block;
@@ -78,7 +78,7 @@ h4 {
 }
 
 h5 {
-    @include fluid-type (1.5rem, 2rem, 360px, 1280px);
+    @include fluid-type (1.5rem, 2rem, 320px, 1280px);
     margin: 0;
     padding: 0;
     display: block;
@@ -89,7 +89,7 @@ h5 {
 
 p { 
     font-family: 'Cabin', sans-serif;
-    @include fluid-type (1.5rem, 2.5rem, 360px, 1280px);
+    @include fluid-type (1.5rem, 2.5rem, 320px, 1280px);
     margin: 0;
     line-height: 4rem;
 }

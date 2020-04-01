@@ -1,14 +1,37 @@
 .cardDeck {
     position: relative;
     top: 0%;
-    right: 3vw;
+    right: 1vw;
     min-width: 6rem;
     min-height: 10rem;
     width: 85%; //175px;
     margin: auto;
-    // transform: rotate(25deg);
     grid-area: 1 / 4;
     z-index: 2;
+}
+
+@media (max-width: 1075px){
+    .cardDeck {
+        top: 9%;
+    }
+}
+
+@media (max-width: 830px) {
+    .cardDeck {
+        top: 20%;
+    }
+}
+
+@media (max-width: 516px) {
+    .cardDeck {
+        right: 5vw;
+    }
+}
+
+@media (max-width: 340px) {
+    .cardDeck {
+        right: 10vw;
+    }
 }
 
 .deck2 {

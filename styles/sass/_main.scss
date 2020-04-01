@@ -15,20 +15,28 @@
     transition: all 1s ease-in-out;
 }
 
+.readMe i, 
 .instructionButton i {
     font-size: 4rem;
     color: white;
+    text-shadow: 5px 5px 10px black;
+    margin-left: 5%;
+}
+
+.instructionButton i {
     position: absolute;
     top: 1%;
     right: 2%;
-    text-shadow: 5px 5px 10px black;
     z-index: 2;
+    background: transparent;
 }
 
-.instruction {
-    position: absolute;
-    right: 10px;
-    top: 7rem;
+.readMe {
+    background: transparent;
+}
+
+.instruction, 
+.information {
     color: black;
     background: #f6f6f6;
     border-radius: 25px;
@@ -37,12 +45,25 @@
     border: 5px dashed rgb(142, 183, 245);
 }
 
-.arrow i {
-    color: rgb(142, 183, 245);
-    transform: rotate(15deg);
-    float: right;
-    font-size: 5rem;
+.information {
+    width: 300px;
+    position: absolute;
+    right: 15px;
+    top: 7rem;
+    display: none;
 }
+
+.instruction {
+    position: absolute;
+    right: 10px;
+    top: 7rem;
+    display: none;
+}
+
+.instruction i {
+            color: black;
+        }
+
 
 // main page grid:
 
@@ -58,6 +79,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     width: 100%;
+}
+
+@media (max-width: 400px) {
+    .blackDiv {
+        padding: 0 2rem;
+    }
 }
 
 //set up 2 row 1 column grid

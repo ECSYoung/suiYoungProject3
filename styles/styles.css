@@ -278,14 +278,14 @@ h1, h2, h3, h4, h5, a {
 }
 
 h1 {
-  font-size: calc(3rem + 3 * ((100vw - 360px) / 920));
+  font-size: calc(2.5rem + 3.5 * ((100vw - 320px) / 960));
   margin: 0;
   line-height: 4.5rem;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -296,13 +296,13 @@ h1 {
 }
 
 h2 {
-  font-size: calc(2rem + 1 * ((100vw - 360px) / 920));
+  font-size: calc(2rem + 1 * ((100vw - 320px) / 960));
   margin: 0;
   line-height: 4.5rem;
   display: inline;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   h2 {
     font-size: 2rem;
   }
@@ -315,7 +315,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(1.8rem + 1.2 * ((100vw - 360px) / 920));
+  font-size: calc(1.8rem + 1.2 * ((100vw - 320px) / 960));
   margin: 0;
   padding: 0;
   display: block;
@@ -324,7 +324,7 @@ h3 {
   color: black;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   h3 {
     font-size: 1.8rem;
   }
@@ -337,7 +337,7 @@ h3 {
 }
 
 h4 {
-  font-size: calc(1.8rem + 1.2 * ((100vw - 360px) / 920));
+  font-size: calc(1.8rem + 1.2 * ((100vw - 320px) / 960));
   margin: 0;
   padding: 0;
   display: block;
@@ -346,7 +346,7 @@ h4 {
   color: black;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   h4 {
     font-size: 1.8rem;
   }
@@ -359,7 +359,7 @@ h4 {
 }
 
 h5 {
-  font-size: calc(1.5rem + 0.5 * ((100vw - 360px) / 920));
+  font-size: calc(1.5rem + 0.5 * ((100vw - 320px) / 960));
   margin: 0;
   padding: 0;
   display: block;
@@ -368,7 +368,7 @@ h5 {
   color: black;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   h5 {
     font-size: 1.5rem;
   }
@@ -382,12 +382,12 @@ h5 {
 
 p {
   font-family: 'Cabin', sans-serif;
-  font-size: calc(1.5rem + 1 * ((100vw - 360px) / 920));
+  font-size: calc(1.5rem + 1 * ((100vw - 320px) / 960));
   margin: 0;
   line-height: 4rem;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   p {
     font-size: 1.5rem;
   }
@@ -514,7 +514,7 @@ canvas {
 .cardDeck {
   position: relative;
   top: 0%;
-  right: 3vw;
+  right: 1vw;
   min-width: 6rem;
   min-height: 10rem;
   width: 85%;
@@ -523,6 +523,30 @@ canvas {
   -ms-grid-column: 4;
   grid-area: 1 / 4;
   z-index: 2;
+}
+
+@media (max-width: 1075px) {
+  .cardDeck {
+    top: 9%;
+  }
+}
+
+@media (max-width: 830px) {
+  .cardDeck {
+    top: 20%;
+  }
+}
+
+@media (max-width: 516px) {
+  .cardDeck {
+    right: 5vw;
+  }
+}
+
+@media (max-width: 340px) {
+  .cardDeck {
+    right: 10vw;
+  }
 }
 
 .deck2 {
@@ -580,20 +604,28 @@ canvas {
   transition: all 1s ease-in-out;
 }
 
+.readMe i,
 .instructionButton i {
   font-size: 4rem;
   color: white;
+  text-shadow: 5px 5px 10px black;
+  margin-left: 5%;
+}
+
+.instructionButton i {
   position: absolute;
   top: 1%;
   right: 2%;
-  text-shadow: 5px 5px 10px black;
   z-index: 2;
+  background: transparent;
 }
 
-.instruction {
-  position: absolute;
-  right: 10px;
-  top: 7rem;
+.readMe {
+  background: transparent;
+}
+
+.instruction,
+.information {
   color: black;
   background: #f6f6f6;
   border-radius: 25px;
@@ -602,12 +634,23 @@ canvas {
   border: 5px dashed #8eb7f5;
 }
 
-.arrow i {
-  color: #8eb7f5;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-  float: right;
-  font-size: 5rem;
+.information {
+  width: 300px;
+  position: absolute;
+  right: 15px;
+  top: 7rem;
+  display: none;
+}
+
+.instruction {
+  position: absolute;
+  right: 10px;
+  top: 7rem;
+  display: none;
+}
+
+.instruction i {
+  color: black;
 }
 
 .blackDiv {
@@ -625,6 +668,12 @@ canvas {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   width: 100%;
+}
+
+@media (max-width: 400px) {
+  .blackDiv {
+    padding: 0 2rem;
+  }
 }
 
 .mainGrid {
@@ -781,4 +830,3 @@ canvas {
   width: 100vw;
   z-index: 1;
 }
-/*# sourceMappingURL=styles.css.map */

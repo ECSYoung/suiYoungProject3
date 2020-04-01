@@ -4,6 +4,18 @@
 // });
 
 // 🌎 GLOBAL SCOPE •••
+
+// alert on load
+Swal.fire({
+    title: "Click the top right 'i' to learn how to play!",
+    showClass: {
+        popup: "animated fadeInDown faster"
+    },
+    hideClass: {
+        popup: "animated fadeOutUp faster"
+    }
+});
+
 //button to empty inputs:
 $('.buttonStyle').on('click', function () {
     location.reload(true);
@@ -1622,7 +1634,9 @@ $('.instructionButton').on('click', function () {
     $('.instruction').fadeToggle();
 });
 
-
+$('.readMe').on('click', function () {
+    $('.information').fadeToggle();
+});
 
 
 // 🏡 LOCAL SCOPE END •••
